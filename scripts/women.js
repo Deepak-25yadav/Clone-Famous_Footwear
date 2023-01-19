@@ -2,13 +2,47 @@ let product=[];
 let mainHtml=document.getElementById("product");
 let pagination=document.getElementById("pagination_wrapper");
 let sorting=document.getElementById("price");
+let boot=document.getElementById("opt1");
+let clog=document.getElementById("opt2");
+let heel=document.getElementById("opt3")
+let loafer=document.getElementById("opt4");
+let sandal=document.getElementById("opt5");
+let slipper=document.getElementById("opt6");
+let sneaker=document.getElementById("opt7");
+let work=document.getElementById("opt8");
+let brand=document.getElementById("brand");
+boot.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Boot")
+})
+clog.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Clog")
+})
+heel.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Heel")
+})
+loafer.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Loafer")
+})
+sandal.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Sandal");
+})
+slipper.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Slipper")
+})
+sneaker.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Sneaker")
+})
+work.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Work")
+})
 sorting.addEventListener("change",()=>{
   if(sorting.value=="featured"){
-    renderCard(product)
+    fetchRenderPro("?limit=10&page=1")
   }else if(sorting.value=="high"){
     product.sort((a,b)=>{
       return b.price-a.price;
     })
+    console.log(product)
    renderCard(product)
   }else if(sorting.value=="low"){
     product.sort((a,b)=>{
@@ -23,7 +57,22 @@ sorting.addEventListener("change",()=>{
   }
   
 })
+brand.addEventListener("change",()=>{
+  
+  if(brand.value=="nike"){
+    fetchRenderPro("?limit=10&page=1&brand=Nike")
+  }else if(brand.value=="timberland"){
+    fetchRenderPro("?limit=10&page=1&brand=Timberland")
+  }else if(brand.value=="vans"){
+    fetchRenderPro("?limit=10&page=1&brand=Vans")
+  }else if(brand.value=="skecher"){
+    fetchRenderPro("?limit=10&page=1&brand=Skecher")
+  }else if(brand.value=="base"){
+    fetchRenderPro("?limit=10&page=1")
+  }
+})
 // Utilites
+
 function fetchRenderPro(query=null){
     fetch(`https://63c7081e4ebaa80285528ba1.mockapi.io/user/product${query ? query : ""}`)
     .then((res)=> {
@@ -85,7 +134,7 @@ function renderPage(total){
           arr.push(getAsButton(i));
         }
         
-        return arr.join('');
+        return arr.join(' ');
       }
 
       pagination.innerHTML= `

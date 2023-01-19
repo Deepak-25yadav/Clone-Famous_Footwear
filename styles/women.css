@@ -1,3 +1,59 @@
+body{
+    margin: auto;
+}
+.column{
+    margin-left: 20px;
+}
 .container{
     display: flex;
+    margin: auto;
+}
+#product{
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(6,200px);
+    grid-auto-rows: 4;
+    gap: 10px;
+}
+.card{
+    padding: 0px 20px;
+    /* border: 1px solid red; */
+    border-radius: 8px;
+    text-align: center;
+    
+}
+.card:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.container>.row{
+    padding: 0px 20px;
+}
+select{
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+select option{
+    padding: 20px;
+}
+#cat>p{
+    font-size: 20px;
+    cursor: pointer;
+}
+.row h4{
+    font-size: 20px;
+}
+img{
+    width: 100%;
+}
+#pagination_wrapper{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+#pagination_wrapper button{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
 }
