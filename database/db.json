@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Sakthivel",
+      "lastName": "Madhu",
+      "email": "sakthi123456@gmail.com",
+      "password": "123456",
+      "date-of-birth": "14-02-1998",
+      "mobile": "1234567890",
+      "status": "active"
+    },
+    {
+      "firstName": "sa",
+      "lastName": "vel",
+      "email": "as@gmail.com",
+      "password": "7410",
+      "date": "2023-01-25",
+      "mobile": "741852963",
+      "id": 2
+    }
+  ]
+}
