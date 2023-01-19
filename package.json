@@ -1,0 +1,24 @@
+{
+  "name": "wicked-edge-6587",
+  "version": "1.0.0",
+  "description": "This Project is being completed by total 5 members.\r member-1 (Mudabir Raza) is working on == Admin side page \r member-2 (Subir Adhikari) is working on == Women's page  \r member-3 (Sakthivel Madhu) is working on ==  Navbar,footer,Landing page \r member-4 (Ganapathi Bhakthula) is working on == Kid's page & payment page  \r member-5 (Team Lead- Deepak Yadav) is working on == user side register page and login page",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "json-server --watch ./database/db.json --port=5555"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deepak-25yadav/wicked-edge-6587.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deepak-25yadav/wicked-edge-6587/issues"
+  },
+  "homepage": "https://github.com/Deepak-25yadav/wicked-edge-6587#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}

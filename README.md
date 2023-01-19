@@ -1,7 +1,14 @@
 # wicked-edge-6587
-This Project is being completed by total 5 members.
-member-1 (Mudabir Raza) is working on == Admin side page 
-member-2 (Subir Adhikari) is working on == Women's page  
-member-3 (Sakthivel Madhu) is working on ==  Navbar,footer,Landing page 
-member-4 (Ganapathi Bhakthula) is working on == Kid's page & payment page  
-member-5 (Team Lead- Deepak Yadav) is working on == user side register page and login page 
+
+createing backend server: <br>
+1.we need to install <b>npm init -y<b> =>it will create package of json file<br>
+2.we need to install backend server to locally <b> npm i json-server <b> it will create whole package json file <br>
+3.create one db.json file <br>
+example : { <br>
+    "login" :[ <br>
+        "email" :"", <br>
+        "pass" : "" <br>
+    ] <br>
+} <br>
+4.in package.json file create one command called as "start" : "json-server --watch ./db.json --port=5555" <br>
+5.run backend server -> npm start <br>
