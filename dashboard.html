@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Styles/dashboard.css" />
+  <title>Document</title>
+</head>
+
+<body>
+    <div id="dashboard">
+        <div id="dashboard1">
+            <div id="Nav_bar">
+                <img src="company_logo.png" />
+                <div>
+                    <ion-icon class="Icons" name="storefront-outline"></ion-icon>
+                    <p>Dashboard</p>
+                </div>
+                <div>
+                    <ion-icon class="Icons" name="search-outline"></ion-icon>
+                    <p>Search Jobs</p>
+                </div>
+                <div>
+                    <ion-icon class="Icons" name="extension-puzzle-outline"></ion-icon>
+                    <p>Applications</p>
+                </div>
+                <div>
+                    <ion-icon class="Icons" name="pie-chart-outline"></ion-icon>
+                    <p>Statistics</p>
+                </div>
+                <div>
+                    <ion-icon class="Icons" name="receipt-outline"></ion-icon>
+                    <p>News</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Add Products here!!</h2>
+        <form id="form">
+            <input type="text"  alt="Submit" width="48" height="48" id="img" placeholder="enter img link">
+            <input type="text" placeholder="Enter Product name" id="productName">
+            <input type="text" placeholder="Enter brand name" id="brandName">
+            <select name="colour" id="colour">
+                <option value="">colour</option>
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+            </select>
+            <input type="number" placeholder="enter Price" id="price">
+            <select name="gender" id="gender">
+                <option value="">gender</option>
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+                <option value="kids">Kids</option>
+            </select>
+            <select name="size" id="size">
+                <option value="">size</option>
+                <option value="">7.0</option>
+                <option value="">8.0</option>
+                <option value="">9.0</option>
+                <option value="">10.0</option>
+                <option value="">11.0</option>
+            </select>
+            <select name="material" id="material">
+                <option value="">material</option>
+                <option value="fibric">Fibric</option>
+                <option value="lether">Lether</option>
+                <option value="skin">Skin</option>
+                <option value="rubber">Rubber</option>
+            </select>
+            <select name="offer" id="offer">
+                <option value="">offer</option>
+                <option value="below30">Below 30%</option>
+                <option value="30-50">30% - 50%</option>
+                <option value="free">Free</option>
+            </select>
+            <input type="submit" placeholder="Submit" id="submit">
+        </form>
+
+
+        <div id="main_work">
+            <div id="Nav_bar2">
+                <h3 id="title_h3"></h3>
+                <div id="Sub_Workings">
+                    <div id="idSortLtoH">Earliest</div>
+                    <div id="idSortHtoL">Latest</div>
+                </div>
+            </div>
+            <div id="Append_data">
+                <div id="label_col">
+                    <input type="checkbox" class="checkbox">
+                    <div>ID</div>
+                    <div>E-Mail</div>
+                    <div>Name</div>
+                    <div>Contact</div>
+                    <div>Status</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="Scripts/dashboard.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</html>
+
+
+
+
+
