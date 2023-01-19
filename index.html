@@ -5,8 +5,862 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+                    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+                    crossorigin="anonymous" 
+                    referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <section id="head">
+        <!-- search section -->
+        <nav>
+            <div id="nav-search">
+                <a href="home.html"><img src="company_logo.png"> </a>
+                <h1><a href="home.html">Footwear<br> Globe</a></h1>
+                <input id="nav-input" type="text" placeholder="Search... everything you find ships free">               
+                <input id="nav-input-submit" type="submit">
+            </div>
+            <div id="nav-links">
+                <ul>
+                    <li><a href="loginPage.html"><i class="fa fa-user"></i>Account</a></li>
+                    <li><a href="favorite.html" ><i class="fa fa-heart"></i>Favorite</a></li>
+                    <li><a href="cart.html" ><i class="fa fa-shopping-cart" ></i>Cart</a></li>
+                    <li><a href="paymentpage.html"><i class="fa fa-credit-card" ></i>Checkout</a></li>
+                    <li><a href="settings.html"><i class="fa fa-cog" ></i>Settings</a></li>
+                </ul>
+            </div>
+        </nav>
+         <!-- category section -->
+        <nav>
+            <div id="nav1-links">
+                <ul>
+                    <li><a href= "#">Women</a>
+                        <div class=" shoe-menu">
+                            <ul>
+                                <li class="hover-me"><a href= "#"> Women's Shoes</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> View All</a></li>
+                                            <li><a href= "#"> New Arrivals</a></li>
+                                            <li><a href= "#"> Sneakers & Athletics</a></li>
+                                            <li><a href= "#"> Boots</a></li>
+                                            <li><a href= "#"> Heels</a></li>
+                                            <li><a href= "#"> Loafers & Oxfords</a></li>
+                                            <li><a href= "#"> Sandals</a></li>
+                                            <li><a href= "#"> Flats</a></li>
+                                            <li><a href= "#"> Clogs & Mules</a></li>
+                                            <li><a href= "#"> Boat Shoes</a></li>
+                                            <li><a href= "#"> Slippers</a></li>
+                                            <li><a href= "#"> Work & Safety</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Apparel</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> All Women's Apparel</a></li>
+                                            <li><a href= "#"> Tops</a></li>
+                                            <li><a href= "#"> Bottoms </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Sneakers and Athletics</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> View All</a></li>
+                                            <li><a href= "#"> Running Shoes</a></li>
+                                            <li><a href= "#"> Walking Shoes </a></li>
+                                            <li><a href= "#"> Lifestyle & Fashion</a></li>
+                                            <li><a href= "#"> Outdoor & Trail Shoes</a></li>
+                                            <li><a href= "#"> Slip Ons</a></li>
+                                            <li><a href= "#"> Canvas Shoes</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Boots</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> View All</a></li>
+                                            <li><a href= "#"> Ankle Boots & Booties</a></li>
+                                            <li><a href= "#"> Chelsea Boots </a></li>
+                                            <li><a href= "#"> Dress Boots</a></li>
+                                            <li><a href= "#">Tall Boots </a></li>
+                                            <li><a href= "#">Outdoor & Hiking Boots</a></li>
+                                            <li><a href= "#">Wide Calf Boots</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Shops, Styles & More</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> Boot Shop</a></li>
+                                            <li><a href= "#"> Sneaker Shop</a></li>
+                                            <li><a href= "#"> Active Shop</a></li>
+                                            <li><a href= "#"> Event Edit</a></li>
+                                            <li><a href= "#"> Getaway Styles</a></li>
+                                            <li><a href= "#"> Lug Soles</a></li>
+                                            <li><a href= "#"> Eco-Conscious</a></li>
+                                            <li><a href= "#"> Sale</a></li>
+                                            <li><a href= "#"> Clearance</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href= "mens.html">Men</a>
+                        <div class=" shoe-menu">
+                            <ul>
+                                <li class="hover-me"><a href= "mens.html">Men's Shoes </a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "mens.html"> View All</a></li>
+                                            <li><a href= "mens.html"> New Arrivals</a></li>
+                                            <li><a href= "mens.html"> Sneakers & Athletics</a></li>
+                                            <li><a href= "mens.html">Boots</a></li>
+                                            <li><a href= "mens.html"> Loafers & Oxfords</a></li>
+                                            <li><a href= "mens.html"> Sandals</a></li>
+                                            <li><a href= "mens.html"> Work & Safety</a></li>
+                                            <li><a href= "mens.html"> Boat Shoes</a></li>
+                                            <li><a href= "mens.html"> Clogs & Mules</a></li>
+                                            <li><a href= "mens.html"> Slippers</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "mens.html"> Sneakers and Athletics</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "mens.html"> View All</a></li>
+                                            <li><a href= "mens.html"> Running Shoes</a></li>
+                                            <li><a href= "mens.html"> Lifestyle & Fashion </a></li>
+                                            <li><a href= "mens.html"> Walking Shoes</a></li>
+                                            <li><a href= "mens.html"> Basketball Shoes</a></li>
+                                            <li><a href= "mens.html"> Training Shoes</a></li>
+                                            <li><a href= "mens.html"> Canvas Shoes</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "mens.html"> Boots</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "mens.html"> View All</a></li>
+                                            <li><a href= "mens.html"> Outdoor & Hiking Boots</a></li>
+                                            <li><a href= "mens.html"> Dress Boots </a></li>
+                                            <li><a href= "mens.html"> Sneaker Boots</a></li>
+                                            <li><a href= "mens.html"> Work Boots</a></li>
+                                            <li><a href= "mens.html"> Chelsea Boots</a></li>
+                                            <li><a href= "mens.html"> Chukka Boots</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "mens.html"> Shops, Styles & More</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "mens.html"> Sneaker Shop</a></li>
+                                            <li><a href= "mens.html"> Active Shop</a></li>
+                                            <li><a href= "mens.html"> Eco-Conscious </a></li>
+                                            <li><a href= "mens.html"> Sale</a></li>
+                                            <li><a href= "mens.html"> Clearance </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href= "#">Kids</a>
+                        <div class=" shoe-menu">
+                            <ul>
+                                <li class="hover-me"><a href= "#"> Shop by Size </a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> Baby (0-3.5)</a></li>
+                                            <li><a href= "#"> Toddler (4-10)</a></li>
+                                            <li><a href= "#"> Little Kid (10.5-3)</a></li>
+                                            <li><a href= "#"> Big Kid (3.5-7)</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Other Ways to Shop</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> New Arrivals</a></li>
+                                            <li><a href= "#"> View All Kids' Shoes</a></li>
+                                            <li><a href= "#"> Sale </a></li>
+                                            <li><a href= "#"> Clearance</a></li>
+                                            <li><a href= "#"> Wide</a></li>
+                                            <li><a href= "#"> Eco-Conscious</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Girls' Shoes</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> View All</a></li>
+                                            <li><a href= "#"> Sneakers & Athletics</a></li>
+                                            <li><a href= "#"> Boots </a></li>
+                                            <li><a href= "#"> Sandals</a></li>
+                                            <li><a href= "#"> Dress Shoes</a></li>
+                                            <li><a href= "#"> Boat Shoes</a></li>
+                                            <li><a href= "#"> Slippers</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Boys' Shoes </a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> View All</a></li>
+                                            <li><a href= "#"> Sneakers & Athletics</a></li>
+                                            <li><a href= "#"> Boots </a></li>
+                                            <li><a href= "#"> Sandals</a></li>
+                                            <li><a href= "#"> Dress Shoes</a></li>
+                                            <li><a href= "#"> Boat Shoes</a></li>
+                                            <li><a href= "#"> Slippers</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Top Brands </a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> Nike</a></li>
+                                            <li><a href= "#"> Sketches</a></li>
+                                            <li><a href= "#"> Adidas </a></li>
+                                            <li><a href= "#"> crocs </a></li>
+                                            <li><a href= "#"> Puma</a></li>
+                                            <li><a href= "#"> Vans </a></li>
+                                            <li><a href= "#"> Converse</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href= "#">Brands</a>
+                        <!-- <div class=" shoe-menu">
+                            <ul>
+                                <li class="hover-me"><a href= "#"> Bedding Sets </a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> Comforters and Sets</a></li>
+                                            <li><a href= "#"> Bed Sheet Sets</a></li>
+                                            <li><a href= "#"> Quilts and Bedspreads</a></li>
+                                            <li><a href= "#"> Duvet Cover and Sets</a></li>
+                                            <li><a href= "#"> Daybed Cover Sets</a></li>
+                                            <li><a href= "#"> Bed-in-a-Bag</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Bed Sheets and Pillowcases</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> Bed Sheet Sets</a></li>
+                                            <li><a href= "#"> Pillow Shams</a></li>
+                                            <li><a href= "#"> Pillowcases </a></li>
+                                            <li><a href= "#"> Fitted Bed Sheets</a></li>
+                                            <li><a href= "#"> Pillow Protectors</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Mattresses</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> Twin XL Mattress</a></li>
+                                            <li><a href= "#"> Twin Mattress</a></li>
+                                            <li><a href= "#"> Full Mattress </a></li>
+                                            <li><a href= "#"> Air Mattress</a></li>
+                                            <li><a href= "#"> Mattress in a Box </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Blankets </a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> Blankets and Throws</a></li>
+                                            <li><a href= "#"> Heated Blankets</a></li>
+                                            <li><a href= "#"> Weighted Blankets </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Mattress Pads and Toppers </a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> Mattress Toppers</a></li>
+                                            <li><a href= "#"> Mattress Protectors</a></li>
+                                            <li><a href= "#"> Mattress Pads </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> -->
+                    </li>
+                    <li><a href= "#">Accessories</a>
+                        <div class=" shoe-menu">
+                            <ul>
+                                <li class="hover-me"><a href= "#"> Accessories </a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> View All</a></li>
+                                            <li><a href= "#"> Bags</a></li>
+                                            <li><a href= "#"> Socks </a></li>
+                                            <li><a href= "#"> Shoe Charms</a></li>
+                                            <li><a href= "#"> Hair Accessories</a></li>
+                                            <li><a href= "#"> Hats & Gloves</a></li>
+                                            <li><a href= "#"> Insoles & Inserts</a></li>
+                                            <li><a href= "#">Slippers</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Bags</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#">View All</a></li>
+                                            <li><a href= "#"> Backpacks</a></li>
+                                            <li><a href= "#"> Lunch Boxes & Bags </a></li>
+                                            <li><a href= "#"> Drawstring Bags</a></li>
+                                            <li><a href= "#"> Totes & Duffel Bags</a></li>
+                                            <li><a href= "#"> Mini Bags</a></li>
+                                            <li><a href= "#"> Fanny Packs</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Slippers</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> All Slippers</a></li>
+                                            <li><a href= "#"> Women</a></li>
+                                            <li><a href= "#"> Men </a></li>
+                                            <li><a href= "#"> Kids</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Other Ways to Shop</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> Other Ways to Shop</a></li>
+                                            <li><a href= "#"> New Arrivals</a></li>
+                                            <li><a href= "#"> Sale </a></li>
+                                            <li><a href= "#"> Clearance </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href= "#">Sale</a>
+                        <div class=" shoe-menu">
+                            <ul>
+                                <li class="hover-me"><a href= "#"> sale </a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> View All</a></li>
+                                            <li><a href= "#"> Women</a></li>
+                                            <li><a href= "#"> Men </a></li>
+                                            <li><a href= "#"> Girls</a></li>
+                                            <li><a href= "#"> Boys</a></li>
+                                            <li><a href= "#"> Clearance</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Shop by Brand</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> Nike</a></li>
+                                            <li><a href= "#"> adidas</a></li>
+                                            <li><a href= "#"> Converse</a></li>
+                                            <li><a href= "#"> Vans</a></li>
+                                            <li><a href= "#"> birkenstock</a></li>
+                                            <li><a href= "#"> Crocs </a></li>
+                                            <li><a href= "#"> Timberland </a></li>
+                                            <li><a href= "#"> Dr. Martens </a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover-me"><a href= "#"> Shop by Price Point</a><i class="fa fa-angle-right" ></i>
+                                    <div class=" shoe-menu-2">
+                                        <ul>
+                                            <li><a href= "#"> Under $75 </a></li>
+                                            <li><a href= "#"> Under $50</a></li>
+                                            <li><a href= "#"> Under $30</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Your Offers</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- offer sections -->
+        <div id="offer-section">
+            <div>
+                <h3>Up to 60% Off</h3>
+                <h3>Women's Boots</h3>
+                <a href="#">Shop Now</a>
+            </div>
+            <div>
+                <h3>Select Women's Styles</h3>
+                <h3>Under $30</h3>
+                <a href="#">Shop Now</a>
+            </div>
+            <div>
+                <h3>Exclusive App Deals</h3>
+                <h3>for Rewards Members</h3>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+
+        <!-- nike collection -->
+        <div class="main" id="Home">
+            <div class="main_content">
+                <div class="main_text">
+                    <h1>NIKE<br><span>Collection</span></h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
+                        a galley of type and scrambled it to make a type specimen book. It has survived not only 
+                        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                </div>
+                <div class="main_image">
+                    <img src="image/shoes.png">
+                </div>
+            </div>
+            <div class="social_icon">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="button">
+                <a href="#">SHOP NOW</a>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+
+        <!-- shop by category -->
+        <h2 id="ok">Shop by Category</h2>
+        <div id="category-section">
+            <div>
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/post-holiday/categories/wk51_011523_categorybanner_1_winterboots.jpg" />
+                <h3>Snow & Winter Boots</h3>
+            </div>
+            <div>
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/post-holiday/categories/wk50_010923_categorybanner_2_active.jpg" />
+                <h3>Running Shoes</h3>
+            </div>
+            <div>
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/post-holiday/categories/wk50_010923_categorybanner_3_boots_new.jpg" />
+                <h3>Tall Boots</h3>
+            </div>
+            <div>
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/post-holiday/categories/wk51_011523_categorybanner_4_slippers.jpg" />
+                <h3>Slippers</h3>
+            </div>
+        </div>
+        <!-- offer-section-1 -->
+        <div id="offer-section-1">
+            <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/post-holiday/promo/up_to_60_off_womens_boots_nopadding.png" alt="">
+            <a href="">Shop Now</a>
+        </div>
+        <!-- shop by Boots -->
+        <h2>Shop the Boot Sale</h2>
+        <div id="category-section-1">
+                <div>
+                    <img src="https://www.famousfootwear.com/blob/product-images/20000/39/31/0/39310_pair_medium.jpg" />
+                    <h3>SALE</h3>
+                    <h4>Dr.Martens</h4>
+                    <p>Women's zavala Combat Boot</p>
+                    <p>$69.99 </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.famousfootwear.com/blob/product-images/20000/98/06/9/98069_pair_medium.jpg" />
+                    <h3>SALE</h3>
+                    <h4>B52 by bullboxer</h4>
+                    <p>Women's Micah Chelsea Boot</p>
+                    <p>$59.99 </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.famousfootwear.com/blob/product-images/20000/97/64/3/97643_pair_medium.jpg" />
+                    <h3>SALE</h3>
+                    <h4>Baretraps</h4>
+                    <p>Women's Ornella Riding Boot</p>
+                    <p>$79.99 </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.famousfootwear.com/blob/product-images/20000/94/82/5/94825_pair_medium.jpg" />
+                    <h3>SALE</h3>
+                    <h4>Timberland</h4>
+                    <p>Women's Ellendale Water Resistant Hiking Boot</p>
+                    <p>$79.99 </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.famousfootwear.com/blob/product-images/20000/97/89/7/97897_pair_medium.jpg" />
+                    <h3>SALE</h3>
+                    <h4>Eurosoft</h4>
+                    <p>Women's Adeah Chelsea Boot</p>
+                    <p>$54.99 </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+        </div>
+        <!-- style up spend down -->
+        <h2>Style Up Spend Down</h2>
+        <div id="style">
+            <div id="style-1">
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/holiday/price-bubbles/wk48_pricebubbles_performance.jpg?h=148&iar=0&w=150&hash=DE7D0EB08472865D432ADBEEFCBEAE84" alt="">
+                <h3 class="style-1">Performance <br> under <br>$50</h3>
+            </div>
+            <div id="style-2">
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/holiday/price-bubbles/wk48_pricebubbles_nike.jpg?h=148&iar=0&w=150&hash=59E5593AD4402D0195C45F308E95FFA7" alt="">
+                <h3 class="style-2">Nike <br> Clearance</h3>
+            </div>
+            <div id="style-3">
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/holiday/price-bubbles/wk48_pricebubbles_womens-boots.jpg?h=148&iar=0&w=150&hash=EC406ACA0256DB19D0BE7D1416C7C262" alt="">
+                <h3 class="style-3">Women's <br> Boots Under <br> $50</h3>
+            </div>
+            <div id="style-4">
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/holiday/price-bubbles/wk48_pricebubbles_kids-clearance.jpg?h=148&iar=0&w=150&hash=9DDB7D9E793FD54571D34D22DEB82DA1" alt="">
+                <h3 class="style-4">Kid's <br>Clearance</h3>
+            </div>
+        </div>
+        <div id="head30">
+            <img src="https://cdn.thewirecutter.com/wp-content/media/2021/02/whitesneakers-2048px-0424-1.jpg?auto=webp&quality=75&width=1024" alt="">
+        </div>
+        <div id="head31">
+            <h3>Up your sneaker game with fresh color combos.</h3>
+            <a href="#">SHOP COURT SNEAKERS</a>
+        </div>
+        <!-- SHOP COURT SNEAKERS -->
+        <div id="head32">
+            <div>
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/post-holiday/2-story/wk51_011523_story_2_a_spotlight.jpg" alt="">
+                <h3>Style Spotlight</h3>
+                <p>Hot new loafers from Circus NY to wear now and later.</p>
+                <a href="#">SHOP THIS STYLE</a>
+            </div>
+            <div>
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/post-holiday/2-story/wk51_011523_story_2_b_platforms.jpg" alt="">
+                <h3>Make a Statement</h3>
+                <p>Show off a look all your own in Vans sneakers.</p>
+                <a href="#">SHOP VANS</a>
+            </div>
+        </div>
+        <!-- style-1  -->
+        <div id="style1-1">
+            <div >
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/holiday/trend/wk49_010123_hp_trend_mini_hub_3_a_active.jpg" alt="">
+            </div>
+            <div >
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/holiday/trend/wk49_010123_hp_trend_mini_hub_3_b_boots.jpg" alt="">               
+            </div>
+            <div >
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/holiday/trend/wk49_010123_hp_trend_mini_hub_3_c_sneaker.jpg" alt="">
+            </div>
+        </div>
+        <div id="head33">
+            <img src="https://media.istockphoto.com/id/1257921238/photo/young-woman-choosing-and-buying-shoes-in-boutique.jpg?s=612x612&w=0&k=20&c=Z5GCtBOuhalzwohHc7cJ7WGtnoUiwL9u79r88AkMTg4=" alt="">
+            <p>Get ready for a warm-weather escape with top vacay picks.</p>
+            <a href="#">GETAWAY STYLES</a>
+        </div>
+        <!-- Best Sellers -->
+        <h2>Best Sellers</h2>
+        <div id="category-section-2">
+                <div>
+                    <img src="https://www.famousfootwear.com/blob/product-images/20000/50/88/8/50888_pair_medium.jpg" />
+                    
+                    <h4>Crocs</h4>
+                    <p>classic Clog</p>
+                    <p>$49.99 </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.famousfootwear.com/blob/product-images/20000/96/85/8/96858_pair_medium.jpg" />
+                    <h4> Nike</h4>
+                    <p>Women's Air Max Excee sneakers</p>
+                    <p>$89.99 </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.famousfootwear.com/blob/product-images/20000/38/20/8/38208_pair_medium.jpg" />
+                    <h3>New</h3>
+                    <h4>Crocs</h4>
+                    <p>Women's classic Fuzz Lined Clog</p>
+                    <p>$74.99 </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.famousfootwear.com/blob/product-images/20000/97/10/8/97108_pair_medium.jpg" />
+                    <h3>ECO-CONSCIOUS</h3>
+                    <h4>Nike</h4>
+                    <p>Women's Court Vision Low Sneaker</p>
+                    <p>$74.99 </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.famousfootwear.com/blob/product-images/20000/31/49/0/31490_pair_medium.jpg" />
+                    
+                    <h4>Nike</h4>
+                    <p>Women's court Vision Alta Sneakers</p>
+                    <p>$84.99 </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+        </div>
+        <!-- Gotta-Have Brands -->
+        <h2>Gotta-Have Brands</h2>
+        <div id="head34">
+            <div >
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/tests/hp-bts-redesign/brands/hp_logo_nike.png" alt="">
+            </div>
+            <div >
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/tests/hp-bts-redesign/brands/hp_logo_converse.png" alt="">               
+            </div>
+            <div >
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/fall/logos/hp_logo_heydude.png" alt="">
+            </div>
+            <div >
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/fall/logos/hp_logo_bearpawupdate.png" alt="">
+            </div>
+            <div >
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/fall/logos/hp_logo_drmartens.png" alt="">
+            </div>
+            <div >
+                <img src="https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/fall/logos/hp_logo_timberland.png" alt="">
+            </div>
+        </div>
+        <!-- New Arrivals -->
+        <h2>New Arrivals</h2>
+        <div id="category-section-3">
+                <div>
+                    <img src="https://www.famousfootwear.com/blob/product-images/20000/38/20/8/38208_pair_medium.jpg" />
+                    <h3>New</h3>
+                    <h4>Crocs</h4>
+                    <p>women's classic fuzz lined Clog</p>
+                    <p>$74.99 </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.famousfootwear.com/blob/product-images/20000/54/42/2/54422_pair_medium.jpg" />
+                    <h3>New</h3>
+                    <h4> Nike</h4>
+                    <p>kid's kyrie basketball shoe </p>
+                    <p>$69.99 </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.famousfootwear.com/blob/product-images/20000/38/96/4/38964_pair_medium.jpg" />
+                    <h3>New</h3>
+                    <h4>Dr.Scholl's</h4>
+                    <p>Women's jetset isle slip on</p>
+                    <p>$59.99 </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.famousfootwear.com/blob/product-images/20000/99/08/9/99089_pair_medium.jpg" />
+                    <h3>ECO-CONSCIOUS</h3>
+                    <h4>adidas</h4>
+                    <p>Women's Lite Racer adapt slip on</p>
+                    <p>$69.99 </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://www.famousfootwear.com/blob/product-images/20000/94/87/5/94875_pair_medium.jpg" />
+                    <h3>New</h3>
+                    <h4>New Balance</h4>
+                    <p>Women's 420 Retro jogger</p>
+                    <p>$79.99 </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+        </div>
+        <!-- slider images  -->
+        <h2>We Love To See Your Style</h2>
+       <div id="body">
+            <div class="slider">
+                <div class="images">
+                    <input type="radio" name="slide" id="img1" checked>
+                    <input type="radio" name="slide" id="img2">
+                    <input type="radio" name="slide" id="img3">
+                    <input type="radio" name="slide" id="img4">
+                    <input type="radio" name="slide" id="img5">
+                    <input type="radio" name="slide" id="img6">
+                    <input type="radio" name="slide" id="img7">
+                    <img src="slider-img/img1.jpg" class="m1" alt="img1">
+                    <img src="slider-img/img2.jpg" class="m2" alt="img2">
+                    <img src="slider-img/img3.jpg" class="m3" alt="img3">
+                    <img src="slider-img/img4.jpg" class="m4" alt="img4">
+                    <img src="slider-img/img5.jpg" class="m5" alt="img5">
+                    <img src="slider-img/img6.jpg" class="m6" alt="img6">
+                    <img src="slider-img/img7.jpg" class="m7" alt="img7">
+                </div>
+                <div class="dots"> 
+                    <label for="img1"></label>
+                    <label for="img2"></label>
+                    <label for="img3"></label>
+                    <label for="img4"></label>
+                    <label for="img5"></label>
+                    <label for="img6"></label>
+                    <label for="img7"></label>
+                </div>
+            </div>
+        </div>  
+        <div id="head35">
+            <a href="#">GET MORE FRESH INSPO</a>
+        </div>
+        <h2>Shop For :-</h2>
+        <div id="head36">
+            <a href="">WOMEN</a>
+            <a href="">MEN</a>
+            <a href="">KID</a>
+            <a href="">SALE</a>
+        </div>
+        <!-- newsletter  -->
+        <div class="content">
+            <h3>Find Your Next Pair of Shoes at Famous Footwear</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ullam veniam at itaque culpa hic corporis saepe dicta doloremque nihil.</p>
+            <form action="">
+                <input type="email" placeholder="enter your email" class="box">
+                <input type="submit" value="send" class="btn">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_main">
+            <div class="tag">
+                <h1>Contact</h1>
+                <a href="#"><i class="fa-solid fa-house"></i>123/Colombo/Sri Lanka</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+94 12 345 6789</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>contact@gmail.com</a>
+            </div>
+
+            <div class="tag">
+                <h1>Get Help</h1>
+                <a href="#" class="center">FAQ</a>
+                <a href="#" class="center">Shipping</a>
+                <a href="#" class="center">Returns</a>
+                <a href="#" class="center">Payment Options</a>
+            </div>
+
+            <div class="tag">
+                <h1>Our Stores</h1>
+                <a href="#" class="center">Sri Lanka</a>
+                <a href="#" class="center">USA</a>
+                <a href="#" class="center">India</a>
+                <a href="#" class="center">Japan</a>
+            </div>
+
+            <div class="tag">
+                <h1>Follw Us</h1>
+                <div class="social_link">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>                    
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="scripts/home.js"></script>
 </body>
 </html>
