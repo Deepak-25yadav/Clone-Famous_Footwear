@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "firstName": "sa",
+      "lastName": "vel",
+      "email": "as@gmail.com",
+      "password": "7410",
+      "date": "2023-01-25",
+      "mobile": "741852963",
+      "id": 2
+    },
+    {
+      "firstName": "Sakthivel",
+      "lastName": "madhu",
+      "email": "sadi1402sa1403@gmail.com",
+      "password": "8520",
+      "date": "2023-01-31",
+      "mobile": "7538837154",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "image": "https://www.famousfootwear.com/-/media/project/tenant/famous-footwear/famous-footwear/homepage/2022/post-holiday/categories/wk51_011523_categorybanner_1_winterboots.jpg",
+      "name": "shoe",
+      "brand": "puma",
+      "colour": "blue",
+      "price": "59",
+      "gender": "men",
+      "size": "8.0",
+      "material": "lether",
+      "offer": "30-50",
+      "id": "PK6AFGr"
+    },
+    {
+      "image": "https://www.famousfootwear.com/blob/product-images/20000/74/20/1/74201_pair_medium.jpg",
+      "name": "shoe",
+      "brand": "adidas",
+      "colour": "red",
+      "price": "120",
+      "gender": "women",
+      "size": "",
+      "material": "rubber",
+      "offer": "below30",
+      "id": "0xFofs9"
+    }
+  ]
+}
