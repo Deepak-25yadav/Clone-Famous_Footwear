@@ -2,9 +2,51 @@ let product=[];
 let mainHtml=document.getElementById("product");
 let pagination=document.getElementById("pagination_wrapper");
 let sorting=document.getElementById("price");
+let boot=document.getElementById("opt1");
+let clog=document.getElementById("opt2");
+let heel=document.getElementById("opt3")
+let loafer=document.getElementById("opt4");
+let sandal=document.getElementById("opt5");
+let slipper=document.getElementById("opt6");
+let sneaker=document.getElementById("opt7");
+let work=document.getElementById("opt8");
+let brand=document.getElementById("brand");
+let material=document.getElementById("material");
+let colour=document.getElementById("colour");
+// Brand filter functnality
+boot.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Boot")
+})
+clog.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Clog")
+})
+heel.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Heel")
+})
+loafer.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Loafer")
+})
+sandal.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Sandal");
+})
+slipper.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Slipper")
+})
+sneaker.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Sneaker")
+})
+work.addEventListener("click",()=>{
+  fetchRenderPro("?limit=10&page=1&category=Work")
+})
+// Sorting functionality
+sorting.addEventListener("change",()=>{
+  if(sorting.value=="featured"){
+    fetchRenderPro("?limit=10&page=1")
+
 sorting.addEventListener("change",()=>{
   if(sorting.value=="featured"){
     renderCard(product)
+
   }else if(sorting.value=="high"){
     product.sort((a,b)=>{
       return b.price-a.price;
@@ -23,7 +65,61 @@ sorting.addEventListener("change",()=>{
   }
   
 })
+
+// brand filter functionality
+brand.addEventListener("change",()=>{
+  
+  if(brand.value=="nike"){
+    fetchRenderPro("?limit=10&page=1&brand=Nike")
+  }else if(brand.value=="timberland"){
+    fetchRenderPro("?limit=10&page=1&brand=Timberland")
+  }else if(brand.value=="vans"){
+    fetchRenderPro("?limit=10&page=1&brand=Vans")
+  }else if(brand.value=="skecher"){
+    fetchRenderPro("?limit=10&page=1&brand=Skecher")
+  }else if(brand.value=="base"){
+    fetchRenderPro("?limit=10&page=1")
+  }
+})
+// material
+material.addEventListener("change",()=>{
+  if(material.value=="base"){
+    fetchRenderPro("?limit=10&page=1")
+  }else if(material.value=="Canvas"){
+    fetchRenderPro("?limit=10&page=1&material=canvas")
+  }else if(material.value=="Leather"){
+    fetchRenderPro("?limit=10&page=1&material=leather")
+  }else if(material.value=="EVA"){
+    fetchRenderPro("?limit=10&page=1&material=EVA")
+  }else if(material.value=="Fabric"){
+    fetchRenderPro("?limit=10&page=1&material=fabric")
+  }
+})
+// colour filter functionality
+colour.addEventListener("change",()=>{
+  if(colour.value=="base"){
+    fetchRenderPro("?limit=10&page=1")
+  }else if(colour.value=="black"){
+    fetchRenderPro("?limit=10&page=1&colour=black")
+  }else if(colour.value=="white"){
+    fetchRenderPro("?limit=10&page=1&colour=white")
+  }else if(colour.value=="pink"){
+    fetchRenderPro("?limit=10&page=1&colour=pink")
+  }else if(colour.value=="blue"){
+    fetchRenderPro("?limit=10&page=1&colour=blue")
+  }else if(colour.value=="brown"){
+    fetchRenderPro("?limit=10&page=1&colour=brown")
+  }else if(colour.value=="red"){
+    fetchRenderPro("?limit=10&page=1&colour=red")
+  }else if(colour.value=="grey"){
+    fetchRenderPro("?limit=10&page=1&colour=grey")
+  }
+})
 // Utilites
+
+
+// Utilites
+
 function fetchRenderPro(query=null){
     fetch(`https://63c7081e4ebaa80285528ba1.mockapi.io/user/product${query ? query : ""}`)
     .then((res)=> {
@@ -85,7 +181,10 @@ function renderPage(total){
           arr.push(getAsButton(i));
         }
         
+        return arr.join(' ');
+
         return arr.join('');
+
       }
 
       pagination.innerHTML= `
