@@ -346,4 +346,8 @@ footer .footer_main .tag .search_bar button{
     border-radius: 25px;
     color: white;
     cursor: pointer;
+
+.container{
+    display: flex;
+
 }
