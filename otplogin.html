@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="styles/otplogin.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="feature" class="slide">
+            <img src="image/shoes.png" alt="">
+        </div>
+        <div class="form" id="form">
+            <h1>Login</h1>
+            <input type="email" id="email" placeholder="Enter Your Email here">
+            <button class="btn" onclick="sendOTP()">Send OTP</button>
+            <input type="text" class="otpverify" id="otp_inp" placeholder="Enter the OTP ">
+            <button class="btn" id="otp_btn"><a href="index.html">Verify</a></button>
+            <!-- <div class="otpverify"></div>        -->
+        </div>
+    </div>
+
+    <script src="scripts/otplogin.js"></script>
+    
+</body>
+
+</html>
