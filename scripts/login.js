@@ -26,6 +26,7 @@ if(element.email==gmail)
         if(isPassword==true)
         {
             alert("Login SuccessFully");
+            window.location.href = "index.html"
         }
         else{
             alert("Your Password is wrong ")
