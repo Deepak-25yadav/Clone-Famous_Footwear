@@ -202,7 +202,7 @@ function renderPage(total){
       <div>  
         ${asListOfButtons()}  
       </div>
-    `
+    `;
       let paginationButtons = document.querySelectorAll(".pagination-button");
   for (let btn of paginationButtons) {
     btn.addEventListener('click', (e) => {
