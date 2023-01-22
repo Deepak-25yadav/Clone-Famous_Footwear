@@ -2,7 +2,9 @@ let main=document.getElementById("item");
 let billing=document.getElementById("bill");
 var add=JSON.parse(localStorage.getItem("add"))||[]
 
+
 show(add)
+
 function show(data){
     let amount=0;
     let discount=0;

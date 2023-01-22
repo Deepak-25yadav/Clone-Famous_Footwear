@@ -1,7 +1,9 @@
 let mainHtml=document.getElementById("container");
 var list=JSON.parse(localStorage.getItem("wish"))||[]
 var add=JSON.parse(localStorage.getItem("add"))||[]
-
+let cart_data=JSON.parse(localStorage.getItem("cart_data_list"))||[];
+let favourite_data=JSON.parse(localStorage.getItem("favourite_data_list"))||[];
+showKid(favourite_data)
 window.addEventListener("load",()=>{
     show(list)
 })
@@ -79,3 +81,55 @@ function show(data){
     
 }
 
+function showKid(data){
+    data.map((item,index)=>{
+        let div=document.createElement("div")
+            div.setAttribute("class","card");
+            let div2=document.createElement("div")
+            div2.setAttribute("class","img")
+            
+            let img=document.createElement("img");
+            img.setAttribute("src",item.img);
+            div2.append(img)
+            let div3=document.createElement("div")
+            div3.setAttribute("class","body");
+            let h3=document.createElement("h3")
+            h3.innerText=item.name;
+            let p1=document.createElement("p")
+            p1.innerText=item.desc;
+            let p2=document.createElement("p");
+            p2.innerText="Size: "+item.size;
+            let h4=document.createElement("h4");
+            h4.innerText="$"+item.price;
+            let btn=document.createElement("button");
+            btn.setAttribute("class","btn");
+            btn.setAttribute("data-id",data.id)
+            btn.innerText="Add to Cart"
+            btn.addEventListener("click",(e)=>{
+                // e.preventDefault()
+                // mainHtml.innerHTML=""
+                // let temp;
+                // temp=favourite_data.splice(index,1)
+                // favourite_data.splice(index,1)
+                // cart_data.push(temp)
+                // showKid(favourite_data)
+                // localStorage.setItem("cart_data_list", JSON.stringify(cart_data));
+            })
+            let remove=document.createElement("button");
+            remove.setAttribute("class","remove");
+            remove.setAttribute("data-id",data.id)
+            remove.innerText="Remove"
+
+            remove.addEventListener("click",(e)=>{
+                mainHtml.innerHTML=""
+                e.preventDefault();
+                favourite_data.splice(index,1)
+                showKid(favourite_data)
+                localStorage.setItem("favourite_data_list", JSON.stringify(favourite_data));
+            })
+            div3.append(h3,p1,p2,h4,btn,remove);
+            div.append(div2,div3);
+            mainHtml.append(div)
+
+    })
+}
