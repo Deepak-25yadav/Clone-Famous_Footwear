@@ -7,12 +7,13 @@ body{
 .container{
     display: flex;
     margin: auto;
+    width: 100%;
 }
 #product{
     margin-left: 20px;
     display: grid;
     grid-template-columns: repeat(6,200px);
-    grid-auto-rows: 4;
+    grid-template-rows: repeat(4,1fr);
     gap: 20px;
 }
 .card{
@@ -21,9 +22,11 @@ body{
     border-radius: 8px;
     text-align: center;
     cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
 }
 .card:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 .card .heart{
     position: relative;
@@ -40,10 +43,17 @@ body{
     border: 0px;
     width: 20px;
     border: 1px solid;
+    position: relative;
+    right: -20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .pagination-button{
     font-size: 20px;
     border-radius: 8px;
+}
+.pagination-button:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 .container>.row{
     padding: 0px 20px;
@@ -370,8 +380,11 @@ footer .footer_main .tag .search_bar button{
     color: white;
     cursor: pointer;
 
+
 .container{
     display: flex;
 
 }
 
+
+}
