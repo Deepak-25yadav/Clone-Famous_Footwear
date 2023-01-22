@@ -260,6 +260,7 @@ header .navbar a{
     width: 20vw;
     /* border: 1px solid teal; */
     margin-right: 15px;
+    font-size: medium;
 
 
 }
@@ -286,8 +287,10 @@ img{
 #fil{
     width: 150px;
     height: 40px;
-    border: dotted 3px #000000;
+    border: solid 3px #000000;
     /* border-style: solid; */
+    font-size: medium;
+    margin-bottom: 25px;
 }
 #mid{
     /* border: 1px solid red ; */
@@ -345,4 +348,33 @@ img{
     color:var(--orange);
   }
   
-   
+   #brand{
+    /* margin-top: 50px; */
+    font-size: medium;
+    border: solid 3px #000000;
+   }
+
+   #colour{
+    font-size: medium;
+    border: solid 3px #000000;
+   }
+
+   #Add_To_Cart_button{
+
+    background-color:rgb(123, 213, 45);
+    margin-top: 10px;
+    width: 90px;
+    height: 35px;
+    border-radius: 10%;
+   }
+
+   #h1price{
+    font-size: 20px;
+    color:solid black;
+    font-weight: 700;
+   }
+
+   #rating{
+    color: #fc9607;
+    font-weight: 700;
+   }
