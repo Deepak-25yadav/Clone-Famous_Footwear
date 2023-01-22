@@ -171,122 +171,9 @@ h1{
     color: darkgoldenrod;
     
 }
-/* Footer */
-/* footer{
-    width: 100%;
-}
 
-footer .footer_main{
-    width: 100%;
-    background: burlywood;
-    display: flex;
-    justify-content: space-around;
-}
 
-footer .footer_main .tag{
-    margin: 10px 0;
-}
-
-footer .footer_main .tag .center{
-    text-align: center;
-}
-
-footer .footer_main .tag h1{
-    font-size: 25px;
-    margin: 25px 0;
-    color: #1c0080;
-}
-
-footer .footer_main .tag a{
-    display: block;
-    color: black;
-    text-decoration: none;
-    margin: 9px 0;
-}
-
-footer .footer_main .tag a i{
-    padding: 0 10px;
-    transition: 0.3;
-}
-
-footer .footer_main .tag a i:hover{
-    color: #c72092;
-}
-
-footer .footer_main .tag .social_link{
-    display: flex;
-}
-
-footer .footer_main .tag .social_link a{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
-    position: relative;
-    margin: 0 5px;
-    z-index: 10;
-    overflow: hidden;
-}
-
-footer .footer_main .tag .social_link a .fa-brands{
-    font-size: 15px;
-    line-height: 30px;
-    z-index: 10;
-    position: relative;
-    transition: 0.5s;
-}
-
-footer .footer_main .tag .social_link a:hover i{
-    color: white;
-}
-
-footer .footer_main .tag .social_link a::after{
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -90px;
-    background: linear-gradient(-45deg, #c72092 , #6c14d0);
-    position: absolute;
-    z-index: -10;
-    transition: 0.5s;
-}
-
-footer .footer_main .tag .social_link a:hover::after{
-    left: 0;
-}
-
-footer .footer_main .tag .search_bar{
-    width: 230px;
-    height: 30px;
-    background: rgb(202, 202, 202);
-    border-radius: 25px;
-}
-
-footer .footer_main .tag .search_bar input{
-    width: 200px;
-    padding: 2px 0;
-    position: relative;
-    top: 17%;
-    left: 6%;
-    border: none;
-    background: none;
-    outline: none;
-    font-size: 13px;
-}
-
-footer .footer_main .tag .search_bar button{
-    padding: 7px 15px;
-    background: linear-gradient(to right, #c72092 , #6c14d0);
-    border: none;
-    margin-top: 15px;
-    border-radius: 25px;
-    color: white;
-    cursor: pointer;
-} */
+/* footer page  */
 footer {
     width: 100%;
     position: relative;
@@ -297,74 +184,74 @@ footer {
     border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
-}
-.row{
+  }
+  footer .row{
     width: 85%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-}
-.col{
+  }
+  footer .col{
     flex-basis: 25%;
     padding: 10px;
-}
-.col:nth-child(2) , .col:nth-child(3){
+  }
+  footer .col:nth-child(2) , .col:nth-child(3){
     flex-basis: 15%;
-}
-.logo{
+  }
+  footer .logo{
     width:80px;
     margin-bottom: 30px;
-}
-.col h3{
+  }
+  footer .col h3{
     width: fit-content;
     margin-bottom: 40px;
     position: relative;
-}
-.email-id{
+  }
+  footer .email-id{
     width: fit-content;
     border-bottom: 1px solid #ccc;
     margin: 20px 0;
-}
-ul li {
+  }
+  footer ul li {
     list-style: none;
     margin-bottom: 10px;
-}
-ul li a{
+  }
+  footer ul li a{
     text-decoration: none;
     color: white;
-}
-form{
+  }
+  footer form{
     padding-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
     margin-bottom: 50px;
-}
-form .far{
+  }
+  footer form .far{
     font-size: 18px;
     margin-right: 10px;
-}
-form input{
+  }
+  footer form input{
     width:100%;
     background: transparent;
     color: #ccc;
     border: 0;
     outline: none;
-}
-form button{
+  }
+  footer form button{
     background: transparent;
     border: 0;
     cursor: pointer;
     outline: none;
-}
-form button .fas{
+  }
+  footer form button .fas{
     font-size: 16px;
     color: #ccc;
-}
-.social-icons .fab{
+  }
+  footer .social-icons .fab{
     width:40px;
     height: 40px;
     border-radius: 50%;
@@ -375,20 +262,23 @@ form button .fas{
     background: #fff;
     margin-right: 15px;
     cursor: pointer;
-}
-.social-icons .fab:hover{
+
+  }
+  footer .social-icons .fab:hover{
     background-color: greenyellow;
-}
-hr{
+  }
+  footer hr{
+
     width: 90%;
     border: 0;
     border-bottom: 1px solid #ccc;
     margin: 20px auto;
-}
-.copyrights{
+
+  }
+  footer .copyrights{
     text-align: center;
-}
-.underline{
+  }
+  footer .underline{
     width: 100%;
     height: 5px;
     background: #767676;
@@ -397,8 +287,9 @@ hr{
     top: 25px;
     left: 0;
     overflow: hidden;
-}
-.underline span{
+
+  }
+  footer .underline span{
     width: 15px;
     height: 100%;
     background:#fff;
@@ -407,7 +298,8 @@ hr{
     top: 0;
     left: 10px;
     animation: moving 2s linear infinite;
-}
+  }
+ 
 @keyframes moving{
     0%{
         left: -20px;
@@ -415,42 +307,12 @@ hr{
     100%{
         left: 100%;
     }
-}
+  }
 
-/* media query */
 
-@media screen and (min-width: 992px){
-    .card{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1.5rem;
-    }
-    .card-wrapper{
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .product-imgs{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .product-content{
-        padding-top: 0;
-    }
-}
-@media (max-width:700px){
-    footer{
-        bottom: unset;
-    }
-    .col{
-        flex-basis: 100%;
-    }
-    .col:nth-child(2) , .col:nth-child(3){
-        flex-basis: 100%;
-    }
-}
+
+
+
 /* Container */
 #container{
     width: 80%;
