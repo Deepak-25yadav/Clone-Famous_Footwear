@@ -1,5 +1,6 @@
 # wicked-edge-6587
 
+
 use this http for backend datas <br>
 http://localhost:5555/users => storing user data <br>
 http://localhost:5555products => creating/adding new product to user from admin <br>
@@ -8,7 +9,7 @@ Installing npm :<br>
 1.npm init -y -> it will create package.json <br>
 2.npm i json-server -> it will create whole package.json<br>
 3.create db.json and add some data<br>
-4.npm json-server --watch ./database/db.json --port=5555 -> it will create whataver your given(5000) localhost
+4.npm json-server --watch ./database/db.json --port=5555 -> it will create whataver your given(5555) localhost
 
 Contributors: <br>
 1.Sakthivel Madhu - https://github.com/SakthivelMadhu <br>
@@ -82,11 +83,6 @@ Admin Login Page : <br>
 
 Admin DashBoard Page : <br>
 ![admin dashboard page](https://user-images.githubusercontent.com/62326876/213938098-e6f72875-abda-4cbe-8880-b8e846472ab0.png) <br>
-
-
-
-
-
 
 
 
