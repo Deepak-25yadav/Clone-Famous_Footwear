@@ -179,41 +179,20 @@ h1{
 
 /* body{
     height: 100vh;
-    font-size: smaller;
+    /* font-size: smaller; */
     font-family:"Famous Footwear Sans",sans-serif;
+
 
 } */
 
 #create-account h2{
     background-color: tomato;
-    text-align: center;
-    line-height: 1.3076923077;
-    letter-spacing: .03625rem;
-    font-size: 1.625rem;
-    font-family: "Famous Footwear Sans",sans-serif;
-    font-size: medium;
-}
-/* p{
-    background-color: aqua;
-    text-align: center;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-family: "Famous Footwear Sans",sans-serif;
-    font-family: inherit;
-    font-size: 100%;
-    font-weight: inherit;
-    font-style: inherit;
-    color:  rgb(54, 49, 49);
-    font-size: smaller;
-} */
 
-.imgdiv img{
-    width: 100%;
 }
 
+
+
+/* From here have begun CSS of Register page */
 
 .register-container{
     display: grid;
@@ -222,34 +201,124 @@ h1{
     width: 80%;
     margin: auto;
     justify-content: center;
-    border:2px dotted black
+    box-shadow: #c72092;
+    /* border:2px dotted black */
+    
 }
+
+.form-container{
+    /* border: 2px solid red; */
+    /* margin: auto;
+    justify-content: center; */
+    background-image: url(https://wallpapercave.com/dwp1x/fto5lYX.jpg);
+}
+#sub-form-container{
+width: 70%;
+height: 600px;
+ /* height: auto; */
+    /* border: 2px solod #1c0080; */
+    /* background-color: #c72092; */
+    margin: auto;
+    justify-content: center;
+}
+#create-account{
+    margin-top: 5px;
+    height: 35px;
+    font-size: large;
+}
+#ch22{
+    font-size: large;
+}
+
+h2{
+    /* background-color: tomato; */
+    text-align: center;
+    line-height: 1.3076923077;
+    letter-spacing: .03625rem;
+    font-size: 1.625rem;
+    font-family: "Famous Footwear Sans",sans-serif;
+    font-size: medium;
+    font-weight: 200;
+}
+
+
+
+.imgdiv img{
+    width: 100%;
+
+}
+input{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: 400;
+    cursor: pointer;
+  
+
+}
+input:hover{
+   background-color: #f0a1d7;
+}
+
 
 .form-container{
     border: 2px solid red;
 }
-/* .imgdiv{
-    border: 2px solid rgba(0, 255, 98, 0.552);
-} */
-.main-form label,input{
+
+
+
+
+label,input{
+
     /* background-color: pink; */
     display: block;
     display: flex;
     margin-left: 10px;
+    font-weight: 600;
+    padding-left: 10px;
 }
 .main-form label{
     color: rgb(54, 49, 49);
+    padding-bottom: 6px;
 }
+
 
 .main-form .input-fields{
     margin: 10px;
+
+.input-fields{
+    margin: 15px;
+
     text-decoration: none;
+    box-shadow: none;
     
 }
-
-#submit-id{
-    margin-left: 10px;
+#ca{
+    border: 2px solid pink;
+    height: 40px;
+    position: relative;
+    left: 10px;       
+    padding-left: 80px;
+    font-weight: 500;
+    font-size: large;
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8FBbojQqyv6rDWMmXul9l8zAd6uGrlDN6-Q&usqp=CAU);
 }
+
+#submit-div{
+    /* position: relative;
+    left: 10px; */
+    /* border: 2px solid green; */
+    box-shadow: aquamarine;
+}
+
+img{
+    width: 100%;
+}
+#Already-a-member{
+  margin-left: 80px;  
+}
+
+/* End of Register Page CSS */
 
 
 
@@ -384,3 +453,6 @@ footer {
         left: 100%;
     }
   }
+
+
+

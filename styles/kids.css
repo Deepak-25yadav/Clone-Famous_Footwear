@@ -1,104 +1,105 @@
-:root{
-    --black:#2c2c54;
-    --orange:#ff9f1a;
-  }
-  
-  *{
-    font-family: 'Nunito', sans-serif;
-    margin: 0; padding:0;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: all .2s linear;
-  }
-  
-  html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top:6rem;
-    scroll-behavior: smooth;
-  }
-  
-  section{
-    padding:2rem 9%;
-  }
-  
-  .heading{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 4rem;
-    color:var(--black);
-    padding:1rem;
-  }
-  
-  .heading span{
-    text-transform: uppercase;
-    color:var(--orange);
-  }
-  
-  .btn{
-    display: inline-block;
-    margin-top: 1rem;
-    border-radius: .5rem;
-    border:.2rem solid var(--black);
-    font-weight: bolder;
-    font-size: 1.7rem;
-    color:var(--black);
-    cursor: pointer;
-    background:#fff;
-    padding:.8rem 3rem;
-  }
-  
-  .btn:hover{
-    background:var(--orange);
-    color:#fff;
-  }
-  
-  header{
-    position: fixed;
-    top:0; left:0; right:0;
-    z-index: 1000;
-    background:#fff;
-    padding:2rem 9%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-  }
-  
-  header .logo{
-    font-size: 2.5rem;
-    color:var(--black);
-    width:50%;
-  }
-  header .logo :hover{
-    color:var(--orange);
-  }
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
-  
+:root{
+  --black:#2c2c54;
+  --orange:#ff9f1a;
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin: 0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top:6rem;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+.heading{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color:var(--black);
+  padding:1rem;
+}
+
+.heading span{
+  text-transform: uppercase;
+  color:var(--orange);
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  border:.2rem solid var(--black);
+  font-weight: bolder;
+  font-size: 1.7rem;
+  color:var(--black);
+  cursor: pointer;
+  background:#fff;
+  padding:.8rem 3rem;
+}
+
+.btn:hover{
+  background:var(--orange);
+  color:#fff;
+}
+
+header{
+  position: fixed;
+  top:0; left:0; right:0;
+  z-index: 1000;
+  background:#fff;
+  padding:2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+  font-size: 2.5rem;
+  color:var(--black);
+  width:50%;
+}
+header .logo :hover{
+  color:var(--orange);
+}
+
 header .navbar a{
-    font-size: 1.7rem;
-    color:var(--black);
-    margin:0 1rem;
-    /* text-align: left;
-    justify-content: left; */
-  }
-  
-  header .navbar a:hover{
-    color:var(--orange);
-  }
-  
-  header .icons a{
-    font-size: 2.5rem;
-    color:var(--black);
-    margin-left:1.5rem;
-  }
-  
-  header .icons a:hover{
-    color:var(--orange);
-  }
-  
+  font-size: 1.7rem;
+  color:var(--black);
+  margin:0 1rem;
+  /* text-align: left;
+  justify-content: left; */
+}
+
+header .navbar a:hover{
+  color:var(--orange);
+}
+
+header .icons a{
+  font-size: 2.5rem;
+  color:var(--black);
+  margin-left:1.5rem;
+}
+
+header .icons a:hover{
+  color:var(--orange);
+}
+
 
   
 #menu-bar{
@@ -260,6 +261,7 @@ header .navbar a{
     width: 20vw;
     /* border: 1px solid teal; */
     margin-right: 15px;
+    font-size: medium;
 
 
 }
@@ -286,8 +288,10 @@ img{
 #fil{
     width: 150px;
     height: 40px;
-    border: dotted 3px #000000;
+    border: solid 3px #000000;
     /* border-style: solid; */
+    font-size: medium;
+    margin-bottom: 25px;
 }
 #mid{
     /* border: 1px solid red ; */
@@ -345,4 +349,101 @@ img{
     color:var(--orange);
   }
   
+   #brand{
+    /* margin-top: 50px; */
+    font-size: medium;
+    border: solid 3px #000000;
+   }
+
+   #colour{
+    font-size: medium;
+    border: solid 3px #000000;
+   }
+
+   #Add_To_Cart_button{
+
+    background-color:rgb(123, 213, 45);
+    margin-top: 10px;
+    width: 90px;
+    height: 35px;
+    border-radius: 10%;
+   }
+
+   #h1price{
+    font-size: 20px;
+    color:solid black;
+    font-weight: 700;
+   }
+
+   #rating{
+    color: #fc9607;
+    font-weight: 700;
+   }
+
+
+
+
+
+   @media all and (min-width: 768px) and (max-width: 1024px) {
    
+
+    .show{
+
+      /* border: 1px solid blue; */
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      padding-top: 150px;
+      gap: 30px;
+      text-align: center;
+      
+  
+  }
+  img{
+    width: 80%;
+}
+  #container>#filter{
+
+    width: 30vw;
+    /* border: 1px solid teal; */
+    margin-right: 15px;
+    font-size: medium;
+
+
+}
+
+       
+
+    }
+
+
+
+    @media all and (min-width: 320px) and (max-width: 767px) {
+     
+      .show{
+
+        /* border: 1px solid blue; */
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-top: 150px;
+        gap: 30px;
+        text-align: center;
+        
+    
+    }
+    img{
+      width: 80%;
+  }
+  
+    #container>#filter{
+
+      width: 20vw;
+      /* border: 1px solid teal; */
+      margin-right: 30px;
+      font-size: medium;
+  
+  
+  }
+
+    }
