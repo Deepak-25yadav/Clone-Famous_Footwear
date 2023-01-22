@@ -46,3 +46,9 @@ document.querySelectorAll('.featured-image-3').forEach(image_3 =>{
     document.querySelector('.big-image-3').src = src;
   });
 });
+
+let carts = JSON.parse(sessionStorage.getItem("cartData")) || []
+document.querySelector(".btn").addEventListener("click" , storingData)
+function storingData(){
+  sessionStorage.setItem("cartData",JSON.stringify(carts))
+}

@@ -1,8 +1,7 @@
 let mainHtml=document.getElementById("container");
 var list=JSON.parse(localStorage.getItem("wish"))||[]
-let itemobj=[]
+var add=JSON.parse(localStorage.getItem("add"))||[]
 
-// renderCard(itemobj)
 window.addEventListener("load",()=>{
     show(list)
 })
@@ -34,7 +33,23 @@ function show(data){
             h4.innerText="$"+data.price;
             let btn=document.createElement("button");
             btn.setAttribute("class","btn");
+            btn.setAttribute("data-id",data.id)
             btn.innerText="Add to Cart"
+            btn.addEventListener("click",(e)=>{
+                e.preventDefault();
+                let dataId=e.target.dataset.id
+                for(let i=0;i<list.length;i++){
+                    
+                    if(list[i].id==dataId){
+                        mainHtml.innerHTML=""
+                        add.push(list.splice(i,1))
+                        localStorage.setItem("add",JSON.stringify(add));
+                        localStorage.setItem("wish",JSON.stringify(list));
+                        show(list)
+                        break;
+                    }
+                }
+            })
             let remove=document.createElement("button");
             remove.setAttribute("class","remove");
             remove.setAttribute("data-id",data.id)
@@ -58,6 +73,7 @@ function show(data){
             div3.append(h3,p1,p2,h4,btn,remove);
             div.append(div2,div3);
             mainHtml.append(div)
+
         })
     })
     
