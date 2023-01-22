@@ -20,49 +20,35 @@
         referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- <button id="loginButton">Click </button> -->
+    
 
-     
-    <div id="loginUpperContainer">
+    <div class="wrapper">
+      <div class="img-box">
+         <img src="images/side-img.jpg" alt="">
+      </div>
 
-      <div id="loginContainer">
-       
-         <form  id="loginForm">
-           <div>
-            <h4>LOGIN</h4>
-           </div>
+      <form action="" id="loginForm">
+         <h1>login</h1>
+         <label for="">Email</label>
+         <input type="email" placeholder="Enter Your mail" id="loginEmail">
+         <label for="">Password</label>
+         <input type="password" placeholder=" Enter Password" id="loginPassword">
+         <!-- <input type="checkbox"><label for="">Forgot Password ? </label> -->
+         <p>Forgot Password ? Please <a href="otplogin.html">click </a> here</p>
+         <input type="submit" value="Sign In" >
+
+      <span>Don't have an account? <a href="#">sign up</a></span>
+      <div class="social-icons">
+         <p>login with social accounts</p>
+         <i class="fa-brands fa-facebook-f"></i>
+         <i class="fa-brands fa-twitter"></i>
+         <i class="fa-brands fa-instagram"></i>
+      </div>
+      </form>
+   </div>  
    
-            <div class="loginInput">
-               <label for="">Gmail*</label>
-               <input type="email" name="" id="loginEmail" placeholder="Username">
-            </div>
    
-             <div class="loginInput">
-               <label for="">Password*</label>
-               <input type="password" name="" id="loginPassword" placeholder="Password">
-            </div> 
    
-             <!-- <button id="loginButton">Click </button>   -->
-             <input type="checkbox" name="hii" id="check"> <span>Remember me ?</span>
-            <div  id="subm">
-               <input type="submit" value="Login" id="sub"> 
-               <span id="fp"><a href="otplogin.html">Forgot Password ?</a></span>
-               <h5>You don't have an account<br> Please <a href="register.html">Register</a> here!</h5>
-            </div> 
-            <!-- <p>Hii</p> -->
-          
-            <!-- <div >
-               <a href="#"><img src="image/google.png"></a>
-               <a href="#"><img src="image/facebook.png"></a>
-               <a href="#"><img src="image/twitter.png"></a>
-           </div> -->
-           <a href="#"><i class=""fa-brands fa-google></i></a>
-           <a href="#"><i class=""fa-brands fa-facebook></i></a>
-           <a href="#"><i class=""fa-brands fa-instagram></i></a>
-         </form>
-       </div>
-    </div>
-           
 
 <script src="scripts/login.js"></script>
 </body>

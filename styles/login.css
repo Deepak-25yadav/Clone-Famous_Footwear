@@ -1,122 +1,153 @@
 
- #loginUpperContainer{
-    /* border: 2px solid green; */
-    width: 80%;
-    height:100vh;
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+ }
+  body{
+    width: 100%;
+    height: 100vh;
     display: flex;
-margin: auto;
-justify-content: center;
-background-image: url("https://wallpapercave.com/wp/wp2723829.jpg");
-font-size: 1.625rem;
-font-family: "Famous Footwear Sans",sans-serif;
-font-size: medium;
-}
-
-
-#loginContainer{
-    /* border: 2px solid red; */
-   width: 40%;
-  max-height: auto;
-display: flex;
-/* margin-right: 100px; */
-margin: auto;
-justify-content: center;
-background-color: white;
-height: 350px;
-box-shadow: 5px 10px rgb(135, 228, 235)
-}
-#loginContainer{
-    backface-visibility: visible;
-    border-radius: 5px;
-    width:40%;
-    text-align: left;
-    padding-left:10px;
-}
-input{
-border: 1px solid;
-   /* text-decoration: none; */
-    outline: none;
-    border-radius: 5px;
-    height: 20px;
-    width: 110%;
-    width:270px;
-    box-shadow: 2px 2px silver
-    
-}
-input:hover{
-background-color: rgb(220, 240, 239);
-}
-
-label{
-    display: block;
-    font-size: smaller;
-    font-weight: 200;
-    margin-bottom: 10px;
-}
-
-.loginInput{
-    margin: 20px 0px 20px 0px;
-     
-} 
-#check{
+    align-items: center;
+    justify-content: center;
+    background-image: url(background-img.png);
+    background-size: cover;
+ }
+ 
+ .wrapper{
+    width: 85%;
+    height: 95%;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+ }
+ 
+ .img-box{
+    background: linear-gradient(
+       90deg,
+       rgba(131,58,180,1),
+       rgba(253,29,29,1),
+       rgba(252,176,69,1)
+    );
+    flex-basis: 50%;
+ }
+ 
+ .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.8;
+ }
+ 
+ form{
+    flex-basis: 50%;
+    width: 100%;
+    height: 100%;
+    /* padding: 40px 100px; */
+    padding: 80px 100px;
+ }
+ 
+ form h1{
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 30px;
     position: relative;
-    right: 5px;
-    width: 15px;
+ }
+ 
+ form h1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 5px;
+    border-radius: 30px;
+    background-color: #ff316f;
+ }
+ 
+ form input{
+    width: 100%;
+    padding: 15px;
     margin-bottom: 20px;
-}
-#subm{
-   margin-bottom:  5000px;
-   height: 30px;
-   width: 110%;
-}
-#sub{
-    height: 25px;
-    background-color: skyblue;
+    margin-top: 5px;
+    border-radius: 30px;
+    outline: none;
+ }
+ 
+ form input[type="checkbox"]{
     width: auto;
-}
-span{
- font-size: 1.625rem;
-font-family: "Famous Footwear Sans",sans-serif;
-font-size: smaller;
-position: relative;
-bottom: 6px;
-padding-right: 50px;
-}
-#fp{
-    position: relative;
-    left: 110px;
-    /* padding-top: 100px; */
-    top: 5px;
-    font-size: 1.625rem;
-font-family: "Famous Footwear Sans",sans-serif;
-font-size: smaller;
-}
+    margin-right: 5px;
+    cursor: pointer;
+ }
+ 
+ form input[type="button"]{
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    background-color: #ff316f;
+ }
+ 
+ form input[type="button"]:hover{
+    background-color: #f41e5e;
+ }
+ 
+ .social-icons{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+ }
+ 
+ .social-icons i{
+    padding: 12px;
+    margin: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #55637c;
+    color: #fff;
+ }
+ 
+ .social-icons i:nth-child(2){
+    padding: 12px 15px;
+    background-color: #ff316f;
+ }
+ 
+ .social-icons i:nth-child(4){
+    padding: 12px 13px;
+ }
+ 
+ .social-icons i:hover{
+    background-color: #ff316f;
+ }
+ 
+ form a{
+    color: #ff316f;
+    text-decoration: none;
+ }
+ 
 
 
 
 
-
-
-
-
-
-/* body {
-    background: #007bff;
-    background: linear-gradient(to right, #0062E6, #33AEFF);
+ /* ----------- now making it responsive using media query -------------- */
+ 
+ @media only screen and (max-width: 1050px){
+  body{
+     height: 100%;
   }
-  
-  .btn-login {
-    font-size: 0.9rem;
-    letter-spacing: 0.05rem;
-    padding: 0.75rem 1rem;
+
+  .wrapper{
+     flex-direction: column;
+     gap: 0;
+     width: 100%;
   }
-  
-  .btn-google {
-    color: white !important;
-    background-color: #ea4335;
+}
+
+@media only screen and (max-width: 500px){
+  form{
+     padding: 50px;
   }
-  
-  .btn-facebook {
-    color: white !important;
-    background-color: #3b5998;
-  } */
+}

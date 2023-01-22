@@ -116,6 +116,33 @@
       "date": "2023-01-03",
       "mobile": "9787534083",
       "id": 16
+    },
+    {
+      "firstName": "sakthivel",
+      "lastName": "madhu",
+      "email": "sakthi130597@gmail.com",
+      "password": "8520",
+      "date": "2023-02-10",
+      "mobile": "852741963",
+      "id": 17
+    },
+    {
+      "firstName": "ayyoo",
+      "lastName": "samy",
+      "email": "sayyosamy@gmail.com",
+      "password": "963",
+      "date": "2023-01-19",
+      "mobile": "741852963",
+      "id": 18
+    },
+    {
+      "firstName": "yennika",
+      "lastName": "sakthi",
+      "email": "yennika@gmail.com",
+      "password": "123456",
+      "date": "2023-02-14",
+      "mobile": "8825747562",
+      "id": 19
     }
   ],
   "products": [

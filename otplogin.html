@@ -7,9 +7,36 @@
     <title>Document</title>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="stylesheet" href="styles/otplogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <section id="head">
+        <!-- search section -->
+        <nav>
+            <div id="nav-search">
+                <a href="index.html"><img src="company_logo.png"> </a>
+                <h1><a href="index.html">Footwear Globe</a></h1>
+            </div>
+            <div id="nav-links">
+                <ul>
+                    <li><a href="register.html"><i class="fa fa-user"></i>Account</a></li>
+                    <li><a href="wishlist.html" ><i class="fa fa-heart"></i>Wishlist</a></li>
+                    <li><a href="cart.html" ><i class="fa fa-shopping-cart" ></i>Cart</a></li>
+                    <li><a href="paymentpage.html"><i class="fa fa-credit-card" ></i>Checkout</a></li>
+                    <li><a href="adminlogin.html"><i class="fa fa-user" ></i>Admin</a></li>
+                </ul>
+            </div>
+        </nav>
+    
     <div id="container">
         <div id="feature" class="slide">
             <img src="image/shoes.png" alt="">
@@ -23,6 +50,54 @@
             <!-- <div class="otpverify"></div>        -->
         </div>
     </div>
+</section>
+
+    <footer>
+        <div class="row">
+          <div class="col">
+            <img src="company_logo.png" class="logo">
+            <p>You can never take too much care over the choice 
+              of your shoes. Too many women think that they are 
+              unimportant, but the real proof of an elegant woman 
+              is what is on her feet.</p>
+          </div>
+          <div class="col">
+            <h3>Office <div class="underline"><span></span></div></h3>
+            <p>ITPL Road</p>
+            <p>Whitefield , Bangalore</p>
+            <p>Karnataka , 560066 , India</p>
+            <p class="email-id">demo@outlook.com</p>
+            <h4>+91 - 0123456789</h4>
+          </div>
+          <div class="col">
+            <h3>Links<div class="underline"><span></span></div></h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">About us</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Newsletter <div class="underline"><span></span></div></h3>
+            <form>
+              <i class="far fa-envelope"></i>
+              <input type="email" placeholder="Enter Your Mail" required>
+              <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <div class="social-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-whatsapp"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-pinterest"></i>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="copyrights"> Mr. Sakthivel Madhu - All Rights Reserved</p>
+      </footer>
+
 
     <script src="scripts/otplogin.js"></script>
     
