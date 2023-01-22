@@ -152,6 +152,24 @@
       "date": "2023-02-01",
       "mobile": "852741963",
       "id": 20
+    },
+    {
+      "firstName": "antman",
+      "lastName": "the wasp",
+      "email": "antman@gmail.com",
+      "password": "12345",
+      "date": "2023-01-21",
+      "mobile": "7538837154",
+      "id": 21
+    },
+    {
+      "firstName": "spiderman",
+      "lastName": "home",
+      "email": "spier@gmail.com",
+      "password": "741",
+      "date": "2023-01-12",
+      "mobile": "8825747562",
+      "id": 22
     }
   ],
   "products": [

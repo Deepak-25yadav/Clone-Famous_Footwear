@@ -112,6 +112,8 @@ colour.addEventListener("change",()=>{
     fetchRenderPro("?limit=12&page=1&colour=red")
   }else if(colour.value=="grey"){
     fetchRenderPro("?limit=12&page=1&colour=grey")
+  }else if(colour.value=="orange"){
+    fetchRenderPro("?limit=12&page=1&colour=orange")
   }
 })
 // Utilites
@@ -149,7 +151,7 @@ function renderCard(card){
       return getCard(item.imageurl,item.brand,item.name,item.price,item.id)
     })
       
-    mainHtml.innerHTML=temp
+    mainHtml.innerHTML=temp.join(" ")
     let wish=document.querySelectorAll(".wishlist-button");
     for(let btn of wish){
       btn.addEventListener("click",(e)=>{
@@ -199,12 +201,11 @@ function renderPage(total){
         
         return arr.join(' ');
 
-        return arr.join('');
 
       }
 
       pagination.innerHTML= `
-      <div>  
+      <div id="page">  
         ${asListOfButtons()}  
       </div>
     `;

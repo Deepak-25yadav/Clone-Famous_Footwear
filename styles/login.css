@@ -1,153 +1,284 @@
 
+
+
   *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+section{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: url(background-img.png);
+   background-size: cover;
+}
+
+section .wrapper{
+   width: 85%;
+   height: 95%;
+   display: flex;
+   background-color: #fff;
+   box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+
+section .img-box{
+   background: linear-gradient(
+      90deg,
+      rgba(131,58,180,1),
+      rgba(253,29,29,1),
+      rgba(252,176,69,1)
+   );
+   flex-basis: 50%;
+}
+
+section .img-box img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   opacity: 0.8;
+}
+
+section form{
+   flex-basis: 50%;
+   width: 100%;
+   height: 100%;
+   /* padding: 40px 100px; */
+   padding: 80px 100px;
+}
+
+section form h1{
+   text-transform: uppercase;
+   font-size: 28px;
+   margin-bottom: 30px;
+   position: relative;
+}
+
+section form h1::before{
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: -5px;
+   width: 50px;
+   height: 5px;
+   border-radius: 30px;
+   background-color: #ff316f;
+}
+
+section form input{
+   width: 100%;
+   padding: 15px;
+   margin-bottom: 20px;
+   margin-top: 5px;
+   border-radius: 30px;
+   outline: none;
+}
+
+section form input[type="checkbox"]{
+   width: auto;
+   margin-right: 5px;
+   cursor: pointer;
+}
+
+section form input[type="button"]{
+   border: none;
+   font-size: 18px;
+   font-weight: 600;
+   cursor: pointer;
+   color: #fff;
+   background-color: #ff316f;
+}
+
+section form input[type="button"]:hover{
+   background-color: #f41e5e;
+}
+
+section .social-icons{
+   margin-top: 50px;
+   text-align: center;
+   font-size: 18px;
+}
+
+section .social-icons i{
+   padding: 12px;
+   margin: 5px;
+   border-radius: 30px;
+   cursor: pointer;
+   background-color: #55637c;
+   color: #fff;
+}
+
+section .social-icons i:nth-child(2){
+   padding: 12px 15px;
+   background-color: #ff316f;
+}
+
+section .social-icons i:nth-child(4){
+   padding: 12px 13px;
+}
+
+section .social-icons i:hover{
+   background-color: #ff316f;
+}
+
+section form a{
+   color: #ff316f;
+   text-decoration: none;
+}
+
+
+/* footer page  */
+footer {
+   width: 100%;
+   position: relative;
+   bottom: 0;
+   background: linear-gradient(to right, #00093c , #2d0b00);
+   color: #fff;
+   padding: 100px 0 30px;
+   border-top-left-radius: 125px;
+   font-size: 13px;
+   line-height: 20px;
  }
-  body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(background-img.png);
-    background-size: cover;
+ footer .row{
+   width: 85%;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-between;
  }
- 
+ footer .col{
+   flex-basis: 25%;
+   padding: 10px;
+ }
+ footer .col:nth-child(2) , .col:nth-child(3){
+   flex-basis: 15%;
+ }
+ footer .logo{
+   width:80px;
+   margin-bottom: 30px;
+ }
+ footer .col h3{
+   width: fit-content;
+   margin-bottom: 40px;
+   position: relative;
+ }
+ footer .email-id{
+   width: fit-content;
+   border-bottom: 1px solid #ccc;
+   margin: 20px 0;
+ }
+ footer ul li {
+   list-style: none;
+   margin-bottom: 10px;
+ }
+ footer ul li a{
+   text-decoration: none;
+   color: white;
+ }
+ footer form{
+   padding-bottom: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid #ccc;
+   margin-bottom: 50px;
+ }
+ footer form .far{
+   font-size: 18px;
+   margin-right: 10px;
+ }
+ footer form input{
+   width:100%;
+   background: transparent;
+   color: #ccc;
+   border: 0;
+   outline: none;
+ }
+ footer form button{
+   background: transparent;
+   border: 0;
+   cursor: pointer;
+   outline: none;
+ }
+ footer form button .fas{
+   font-size: 16px;
+   color: #ccc;
+ }
+ footer .social-icons .fab{
+   width:40px;
+   height: 40px;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 40px;
+   font-size: 20px;
+   color: #000;
+   background: #fff;
+   margin-right: 15px;
+   cursor: pointer;
+ }
+ footer .social-icons .fab:hover{
+   background-color: greenyellow;
+ }
+ footer hr{
+   width: 90%;
+   border: 0;
+   border-bottom: 1px solid #ccc;
+   margin: 20px auto;
+ }
+ footer .copyrights{
+   text-align: center;
+ }
+ footer .underline{
+   width: 100%;
+   height: 5px;
+   background: #767676;
+   border-radius: 3px;
+   position: absolute;
+   top: 25px;
+   left: 0;
+   overflow: hidden;
+ }
+ footer .underline span{
+   width: 15px;
+   height: 100%;
+   background:#fff;
+   position: absolute;
+   border-radius: 3px;
+   top: 0;
+   left: 10px;
+   animation: moving 2s linear infinite;
+ }
+ @keyframes moving{
+   0%{
+       left: -20px;
+   }
+   100%{
+       left: 100%;
+   }
+ }
+
+
+/* ----------- now making it responsive using media query -------------- */
+
+@media only screen and (max-width: 1050px){
+ body{
+    height: 100%;
+ }
+
  .wrapper{
-    width: 85%;
-    height: 95%;
-    display: flex;
-    background-color: #fff;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
- }
- 
- .img-box{
-    background: linear-gradient(
-       90deg,
-       rgba(131,58,180,1),
-       rgba(253,29,29,1),
-       rgba(252,176,69,1)
-    );
-    flex-basis: 50%;
- }
- 
- .img-box img{
+    flex-direction: column;
+    gap: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    opacity: 0.8;
  }
- 
- form{
-    flex-basis: 50%;
-    width: 100%;
-    height: 100%;
-    /* padding: 40px 100px; */
-    padding: 80px 100px;
- }
- 
- form h1{
-    text-transform: uppercase;
-    font-size: 28px;
-    margin-bottom: 30px;
-    position: relative;
- }
- 
- form h1::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 50px;
-    height: 5px;
-    border-radius: 30px;
-    background-color: #ff316f;
- }
- 
- form input{
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    border-radius: 30px;
-    outline: none;
- }
- 
- form input[type="checkbox"]{
-    width: auto;
-    margin-right: 5px;
-    cursor: pointer;
- }
- 
- form input[type="button"]{
-    border: none;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    color: #fff;
-    background-color: #ff316f;
- }
- 
- form input[type="button"]:hover{
-    background-color: #f41e5e;
- }
- 
- .social-icons{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 18px;
- }
- 
- .social-icons i{
-    padding: 12px;
-    margin: 5px;
-    border-radius: 30px;
-    cursor: pointer;
-    background-color: #55637c;
-    color: #fff;
- }
- 
- .social-icons i:nth-child(2){
-    padding: 12px 15px;
-    background-color: #ff316f;
- }
- 
- .social-icons i:nth-child(4){
-    padding: 12px 13px;
- }
- 
- .social-icons i:hover{
-    background-color: #ff316f;
- }
- 
- form a{
-    color: #ff316f;
-    text-decoration: none;
- }
- 
-
-
-
-
- /* ----------- now making it responsive using media query -------------- */
- 
- @media only screen and (max-width: 1050px){
-  body{
-     height: 100%;
-  }
-
-  .wrapper{
-     flex-direction: column;
-     gap: 0;
-     width: 100%;
-  }
 }
 
 @media only screen and (max-width: 500px){
-  form{
-     padding: 50px;
-  }
+ form{
+    padding: 50px;
+ }
 }

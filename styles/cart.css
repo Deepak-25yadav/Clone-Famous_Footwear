@@ -262,15 +262,18 @@ footer {
     background: #fff;
     margin-right: 15px;
     cursor: pointer;
+
   }
   footer .social-icons .fab:hover{
     background-color: greenyellow;
   }
   footer hr{
+
     width: 90%;
     border: 0;
     border-bottom: 1px solid #ccc;
     margin: 20px auto;
+
   }
   footer .copyrights{
     text-align: center;
@@ -284,6 +287,7 @@ footer {
     top: 25px;
     left: 0;
     overflow: hidden;
+
   }
   footer .underline span{
     width: 15px;
@@ -295,7 +299,8 @@ footer {
     left: 10px;
     animation: moving 2s linear infinite;
   }
-  @keyframes moving{
+ 
+@keyframes moving{
     0%{
         left: -20px;
     }
@@ -307,7 +312,7 @@ footer {
 
 
 
-  
+
 /* Container */
 #container{
     width: 80%;
@@ -322,7 +327,10 @@ footer {
     width: 80%;
     margin: auto;
     display: flex;
+    border-radius: 10px;
     margin-bottom: 10px;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .card .body{
     width: 90%;
@@ -339,7 +347,7 @@ footer {
 .card .remove:hover,.btn:hover{
     background-color: white;
     color: black;
-    transition: 1s;
+    transition: .5s;
 }
 .card .remove{
     margin: 5px;
@@ -350,8 +358,10 @@ footer {
 #item{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 60%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 20px;
 }
 #bill{
     display: flex;
@@ -359,6 +369,7 @@ footer {
     width: 30%;
     border: 1px solid black;
     text-align: center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 #bill div{
     display: flex;
@@ -380,4 +391,8 @@ footer {
 #order a{
     text-decoration: none;
     font-weight: bolder;
+}
+#order:hover,#order a:hover{
+    background-color: black;
+    color: white;
 }

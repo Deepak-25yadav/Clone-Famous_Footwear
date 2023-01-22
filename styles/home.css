@@ -697,7 +697,6 @@ h2{
   }
 
 
-
 /* footer page  */
 footer {
     width: 100%;
@@ -710,7 +709,7 @@ footer {
     font-size: 13px;
     line-height: 20px;
   }
-  .row{
+  footer .row{
     width: 85%;
     margin: auto;
     display: flex;
@@ -718,36 +717,36 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
   }
-  .col{
+  footer .col{
     flex-basis: 25%;
     padding: 10px;
   }
-  .col:nth-child(2) , .col:nth-child(3){
+  footer .col:nth-child(2) , .col:nth-child(3){
     flex-basis: 15%;
   }
-  .logo{
+  footer .logo{
     width:80px;
     margin-bottom: 30px;
   }
-  .col h3{
+  footer .col h3{
     width: fit-content;
     margin-bottom: 40px;
     position: relative;
   }
-  .email-id{
+  footer .email-id{
     width: fit-content;
     border-bottom: 1px solid #ccc;
     margin: 20px 0;
   }
-  ul li {
+  footer ul li {
     list-style: none;
     margin-bottom: 10px;
   }
-  ul li a{
+  footer ul li a{
     text-decoration: none;
     color: white;
   }
-  form{
+  footer form{
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -755,28 +754,28 @@ footer {
     border-bottom: 1px solid #ccc;
     margin-bottom: 50px;
   }
-  form .far{
+  footer form .far{
     font-size: 18px;
     margin-right: 10px;
   }
-  form input{
+  footer form input{
     width:100%;
     background: transparent;
     color: #ccc;
     border: 0;
     outline: none;
   }
-  form button{
+  footer form button{
     background: transparent;
     border: 0;
     cursor: pointer;
     outline: none;
   }
-  form button .fas{
+  footer form button .fas{
     font-size: 16px;
     color: #ccc;
   }
-  .social-icons .fab{
+  footer .social-icons .fab{
     width:40px;
     height: 40px;
     border-radius: 50%;
@@ -787,20 +786,21 @@ footer {
     background: #fff;
     margin-right: 15px;
     cursor: pointer;
+
   }
-  .social-icons .fab:hover{
+  footer .social-icons .fab:hover{
     background-color: greenyellow;
   }
-  hr{
+  footer hr{
     width: 90%;
     border: 0;
     border-bottom: 1px solid #ccc;
     margin: 20px auto;
   }
-  .copyrights{
+  footer .copyrights{
     text-align: center;
   }
-  .underline{
+  footer .underline{
     width: 100%;
     height: 5px;
     background: #767676;
@@ -810,7 +810,7 @@ footer {
     left: 0;
     overflow: hidden;
   }
-  .underline span{
+  footer .underline span{
     width: 15px;
     height: 100%;
     background:#fff;

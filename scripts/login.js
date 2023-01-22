@@ -7,7 +7,7 @@ loginForm.addEventListener("submit",(e)=>{
     let password=document.getElementById("loginPassword").value;
     let isPassword=false;
     let isGmail=false
-    registerData.forEach((element,index)=>{
+    registerData.forEach((element)=>{
         if(element.email==gmail){
             isGmail=true;
             if(element.password==password){

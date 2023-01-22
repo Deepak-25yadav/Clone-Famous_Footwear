@@ -7,13 +7,16 @@ body{
 .container{
     display: flex;
     margin: auto;
+    width: 100%;
 }
 #product{
     margin-left: 20px;
     display: grid;
-    grid-template-columns: repeat(6,200px);
-    grid-auto-rows: 4;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
     gap: 20px;
+    margin: auto;
+    width: 80%;
 }
 .card{
     padding: 0px 20px;
@@ -21,9 +24,11 @@ body{
     border-radius: 8px;
     text-align: center;
     cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
 }
 .card:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 .card .heart{
     position: relative;
@@ -38,13 +43,23 @@ body{
 .wishlist-button{
     /* background-color: transparent; */
     border: 0px;
-    width: 20px;
+    width: 30px;
     border: 1px solid;
+    position: relative;
+    right: -70px;
+    top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.wishlist-button:hover{
+    background-color: red;
+    font-weight: bolder;
 }
 .pagination-button{
     font-size: 20px;
     border-radius: 8px;
 }
+
 .container>.rowed{
     padding: 0px 20px;
 }
@@ -254,6 +269,7 @@ h1{
     color: darkgoldenrod;
     
 }
+
 /* footer page  */
 footer {
     width: 100%;
@@ -266,7 +282,7 @@ footer {
     font-size: 13px;
     line-height: 20px;
   }
-  footer .rowed{
+  footer .row{
     width: 85%;
     margin: auto;
     display: flex;
@@ -343,6 +359,7 @@ footer {
     background: #fff;
     margin-right: 15px;
     cursor: pointer;
+
   }
   footer .social-icons .fab:hover{
     background-color: greenyellow;
@@ -384,3 +401,20 @@ footer {
         left: 100%;
     }
   }
+
+@media screen and (min-width: 500px) and (max-width:1200px){
+    #product{
+        grid-template-columns: repeat(2,200px);
+        grid-template-rows: repeat(6,1fr);
+        
+    }
+    .wishlist-button{
+        right: -5px;
+    }
+    #page{
+        width: 50%;
+        position: relative;
+        right: -160px;
+    }
+}
+
