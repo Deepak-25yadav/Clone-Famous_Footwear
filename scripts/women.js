@@ -1,4 +1,6 @@
 let product=[];
+
+let itemid=1;
 let mainHtml=document.getElementById("product");
 let pagination=document.getElementById("pagination_wrapper");
 let sorting=document.getElementById("price");
@@ -15,37 +17,34 @@ let material=document.getElementById("material");
 let colour=document.getElementById("colour");
 // Brand filter functnality
 boot.addEventListener("click",()=>{
-  fetchRenderPro("?limit=10&page=1&category=Boot")
+  fetchRenderPro("?limit=12&page=1&category=Boot")
 })
 clog.addEventListener("click",()=>{
-  fetchRenderPro("?limit=10&page=1&category=Clog")
+  fetchRenderPro("?limit=12&page=1&category=Clog")
 })
 heel.addEventListener("click",()=>{
-  fetchRenderPro("?limit=10&page=1&category=Heel")
+  fetchRenderPro("?limit=12&page=1&category=Heel")
 })
 loafer.addEventListener("click",()=>{
-  fetchRenderPro("?limit=10&page=1&category=Loafer")
+  fetchRenderPro("?limit=12&page=1&category=Loafer")
 })
 sandal.addEventListener("click",()=>{
-  fetchRenderPro("?limit=10&page=1&category=Sandal");
+  fetchRenderPro("?limit=12&page=1&category=Sandal");
 })
 slipper.addEventListener("click",()=>{
-  fetchRenderPro("?limit=10&page=1&category=Slipper")
+  fetchRenderPro("?limit=12&page=1&category=Slipper")
 })
 sneaker.addEventListener("click",()=>{
-  fetchRenderPro("?limit=10&page=1&category=Sneaker")
+  fetchRenderPro("?limit=12&page=1&category=Sneaker")
 })
 work.addEventListener("click",()=>{
-  fetchRenderPro("?limit=10&page=1&category=Work")
+  fetchRenderPro("?limit=12&page=1&category=Work")
 })
 // Sorting functionality
 sorting.addEventListener("change",()=>{
   if(sorting.value=="featured"){
-    fetchRenderPro("?limit=10&page=1")
 
-sorting.addEventListener("change",()=>{
-  if(sorting.value=="featured"){
-    renderCard(product)
+    fetchRenderPro("?limit=12&page=1")
 
   }else if(sorting.value=="high"){
     product.sort((a,b)=>{
@@ -70,49 +69,49 @@ sorting.addEventListener("change",()=>{
 brand.addEventListener("change",()=>{
   
   if(brand.value=="nike"){
-    fetchRenderPro("?limit=10&page=1&brand=Nike")
+    fetchRenderPro("?limit=12&page=1&brand=Nike")
   }else if(brand.value=="timberland"){
-    fetchRenderPro("?limit=10&page=1&brand=Timberland")
+    fetchRenderPro("?limit=12&page=1&brand=Timberland")
   }else if(brand.value=="vans"){
-    fetchRenderPro("?limit=10&page=1&brand=Vans")
+    fetchRenderPro("?limit=12&page=1&brand=Vans")
   }else if(brand.value=="skecher"){
-    fetchRenderPro("?limit=10&page=1&brand=Skecher")
+    fetchRenderPro("?limit=12&page=1&brand=Skecher")
   }else if(brand.value=="base"){
-    fetchRenderPro("?limit=10&page=1")
+    fetchRenderPro("?limit=12&page=1")
   }
 })
 // material
 material.addEventListener("change",()=>{
   if(material.value=="base"){
-    fetchRenderPro("?limit=10&page=1")
+    fetchRenderPro("?limit=12&page=1")
   }else if(material.value=="Canvas"){
-    fetchRenderPro("?limit=10&page=1&material=canvas")
+    fetchRenderPro("?limit=12&page=1&material=canvas")
   }else if(material.value=="Leather"){
-    fetchRenderPro("?limit=10&page=1&material=leather")
+    fetchRenderPro("?limit=12&page=1&material=leather")
   }else if(material.value=="EVA"){
-    fetchRenderPro("?limit=10&page=1&material=EVA")
+    fetchRenderPro("?limit=12&page=1&material=EVA")
   }else if(material.value=="Fabric"){
-    fetchRenderPro("?limit=10&page=1&material=fabric")
+    fetchRenderPro("?limit=12&page=1&material=fabric")
   }
 })
 // colour filter functionality
 colour.addEventListener("change",()=>{
   if(colour.value=="base"){
-    fetchRenderPro("?limit=10&page=1")
+    fetchRenderPro("?limit=12&page=1")
   }else if(colour.value=="black"){
-    fetchRenderPro("?limit=10&page=1&colour=black")
+    fetchRenderPro("?limit=12&page=1&colour=black")
   }else if(colour.value=="white"){
-    fetchRenderPro("?limit=10&page=1&colour=white")
+    fetchRenderPro("?limit=12&page=1&colour=white")
   }else if(colour.value=="pink"){
-    fetchRenderPro("?limit=10&page=1&colour=pink")
+    fetchRenderPro("?limit=12&page=1&colour=pink")
   }else if(colour.value=="blue"){
-    fetchRenderPro("?limit=10&page=1&colour=blue")
+    fetchRenderPro("?limit=12&page=1&colour=blue")
   }else if(colour.value=="brown"){
-    fetchRenderPro("?limit=10&page=1&colour=brown")
+    fetchRenderPro("?limit=12&page=1&colour=brown")
   }else if(colour.value=="red"){
-    fetchRenderPro("?limit=10&page=1&colour=red")
+    fetchRenderPro("?limit=12&page=1&colour=red")
   }else if(colour.value=="grey"){
-    fetchRenderPro("?limit=10&page=1&colour=grey")
+    fetchRenderPro("?limit=12&page=1&colour=grey")
   }
 })
 // Utilites
@@ -123,13 +122,15 @@ colour.addEventListener("change",()=>{
 function fetchRenderPro(query=null){
     fetch(`https://63c7081e4ebaa80285528ba1.mockapi.io/user/product${query ? query : ""}`)
     .then((res)=> {
-        let totalCount= 35;
-        let totalPage = Math.ceil(totalCount/10);
+        let totalCount= 60;
+        let totalPage = Math.ceil(totalCount/12);
         renderPage(totalPage)
         return res.json()
     })
     .then((data)=>{
+      console.log(data);
         let proObj=data.map((item)=>({
+            id:item.id,
             imageurl:item.image,
             brand:item.brand,
             price:item.price,
@@ -143,18 +144,37 @@ function fetchRenderPro(query=null){
 }
 function renderCard(card){
 
-    let temp=[]
-      for(let i=0;i<card.length;i++){
+    let temp;
+    temp=card.map((item)=>{
+      return getCard(item.imageurl,item.brand,item.name,item.price,item.id)
+    })
+      // for(let i=0;i<card.length;i++){
         
-        temp.push(getCard(card[i].imageurl,card[i].brand,card[i].name,card[i].price))
-      }
+      //   temp.push(getCard(card[i].imageurl,card[i].brand,card[i].name,card[i].price,card[i].id))
+      // }
     //   console.log(temp)
     mainHtml.innerHTML=temp
-    
+    let wish=document.querySelectorAll(".wishlist-button");
+    for(let btn of wish){
+      btn.addEventListener("click",(e)=>{
+        e.preventDefault()
+        let dataId=e.target.dataset.id;
+        let id={
+          id:dataId
+        }
+        var list=JSON.parse(localStorage.getItem("wish"))||[]
+          list.push(id)
+          localStorage.setItem("wish",JSON.stringify(list));
+      })
+    }
 }
-function getCard(url,brand,name,rate){
+let heartclass=document.getElementsByClassName("heart")
+function getCard(url,brand,name,rate,id){
     let card=`
-    <div class="card">
+    <div class="card" data-id=${id}>
+    <div class="heart" data-id=${id}>
+    <button class="wishlist-button" data-id=${id} >${id}<i class="fa-regular fa-heart"></i></button>
+    </div>    
     <div class="img">
                 <img src="${url}" alt="">
         </div>
@@ -162,7 +182,7 @@ function getCard(url,brand,name,rate){
             <h3>${brand}</h3>
         </div>
         <div class="name">
-            <h4>${name}</h4>
+            <p>${name}</p>
         </div>
     <div class="price">
             <h4>${"$"+rate}</h4>
@@ -172,7 +192,7 @@ function getCard(url,brand,name,rate){
 }
 
 window.addEventListener("load",()=>{
-    fetchRenderPro("?limit=10&page=1")
+    fetchRenderPro("?limit=12&page=1")
 })
 function renderPage(total){
     function asListOfButtons() {
@@ -191,15 +211,17 @@ function renderPage(total){
       <div>  
         ${asListOfButtons()}  
       </div>
-    `
+    `;
       let paginationButtons = document.querySelectorAll(".pagination-button");
   for (let btn of paginationButtons) {
     btn.addEventListener('click', (e) => {
+      
       let dataId = e.target.dataset.id;
-      fetchRenderPro(`?limit=10&page=${+dataId}`);
+      fetchRenderPro(`?limit=12&page=${+dataId}`);
     })
   }
 }
 function getAsButton(pageNumber) {
     return `<button class="pagination-button" data-id=${pageNumber}>${pageNumber}</button>`
   }
+

@@ -1,81 +1,3 @@
-body{
-    margin: auto;
-}
-.column{
-    margin-left: 20px;
-}
-.container{
-    display: flex;
-    margin: auto;
-}
-#product{
-    margin-left: 20px;
-    display: grid;
-    grid-template-columns: repeat(6,200px);
-    grid-auto-rows: 4;
-    gap: 20px;
-}
-.card{
-    padding: 0px 20px;
-    /* border: 1px solid red; */
-    border-radius: 8px;
-    text-align: center;
-    cursor: pointer;
-}
-.card:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.card .heart{
-    position: relative;
-    left: 60px;
-    top: 5px;
-    cursor: pointer;
-    width: 100%;
-}
-.card .heart:hover{
-    color: black;
-}
-.wishlist-button{
-    background-color: transparent;
-    border: 0px;
-}
-
-.container>.row{
-    padding: 0px 20px;
-}
-select{
-    padding: 20px;
-    border-radius: 5px;
-    font-size: 20px;
-}
-select option{
-    padding: 20px;
-}
-#cat>p{
-    font-size: 20px;
-    cursor: pointer;
-}
-.row h4{
-    font-size: 20px;
-}
-img{
-    width: 100%;
-}
-#pagination_wrapper{
-    width: 100%;
-    margin: auto;
-    position: relative;
-    text-align: center;
-}
-#pagination_wrapper button{
-    width: 80px;
-    height: 80px;
-    margin: 10px;
-}
-.card .name{
-    margin: 10px 0px;
-}
-/*Nav css*/
 *{
     padding: 0;
     margin: 0;
@@ -364,8 +286,39 @@ footer .footer_main .tag .search_bar button{
     border-radius: 25px;
     color: white;
     cursor: pointer;
-
-.container{
+}
+/* Container */
+#container{
+    width: 80%;
+    margin: auto;
     display: flex;
-
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.card{
+    background-color: rgb(167, 240, 215);
+    width: 30%;
+    margin: auto;
+}
+.card .body{
+    width: 90%;
+    margin: auto;
+    padding: 10px 0px;
+}
+.card .remove,.btn{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+.card .remove:hover,.btn:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+.card .remove{
+    margin: 5px;
+}
+.card img{
+    width: 100%;
 }
