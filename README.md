@@ -12,3 +12,5 @@ example : { <br>
 } <br>
 4.in package.json file create one command called as "start" : "json-server --watch ./db.json --port=5555" <br>
 5.run backend server -> npm start <br>
+
+
