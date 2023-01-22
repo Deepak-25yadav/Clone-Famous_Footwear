@@ -23,6 +23,7 @@ async function addProducts(event){
             body : JSON.stringify(obj) , 
             headers : {
                 "Content-Type" : "application/json" ,
+                
             }
         });
 

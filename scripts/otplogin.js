@@ -23,7 +23,7 @@ function sendOTP() {
         Host: "smtp.elasticemail.com",
         Username: "sakthi130597@gmail.com",
         Password: "15F25F4F2497B19460BC9CEF34BADCDDBBE7",
-        From: email.value,
+        From: "sakthi130597@gmail.com",
         To: "sakthi130597@gmail.com",
         Subject: "OTP sent from SMTP creditenials",
         Body: emailBody
