@@ -237,7 +237,9 @@ data.map(function(el,i){
     sym.style.textAlign="end"
     sym.id="favourite"
     sym.addEventListener("click",
-    function favou(){
+    function favou(e){
+      let favourite_data=JSON.parse(localStorage.getItem("favourite_data_list"))||[];
+      e.target.dataset.id
            favourite_data.push(el)
       localStorage.setItem("favourite_data_list", JSON.stringify(favourite_data));
      
@@ -261,14 +263,16 @@ data.map(function(el,i){
     btn.innerText="Add To Cart"
     btn.id="Add_To_Cart_button";
     btn.addEventListener("click",()=>{
-
+      let cart_data=JSON.parse(localStorage.getItem("cart_data_list"))||[];
       cart_data.push(el)
       localStorage.setItem("cart_data_list", JSON.stringify(cart_data));
+
     })
     div.append(sym,img,h2,p,price,rating,btn)
     show.append(div)
 })
 }
+
 showdata(data);
 
 let fill= document.querySelector("#fil");
@@ -286,15 +290,16 @@ let fill= document.querySelector("#fil");
     showdata(data)
     // console.log(data)
   }
-  else if(fill.value=="High to Low"){
+  else if(fill.value=="Low to High"){
     show.innerHTML=null;
-   data.sort((a,b)=>{
-      
-     return a.price-b.price
-   })
+    data.sort((a,b)=>{
+       
+      return a.price-b.price
+    })
    showdata(data)
    // console.log(data)
  }
+  
   
 
  })
