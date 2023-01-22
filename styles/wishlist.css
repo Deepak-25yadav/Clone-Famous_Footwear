@@ -292,13 +292,16 @@ footer .footer_main .tag .search_bar button{
     width: 80%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     margin-bottom: 20px;
 }
 .card{
     background-color: rgb(167, 240, 215);
     width: 30%;
     margin: auto;
+    margin: 0px 10px;
 }
 .card .body{
     width: 90%;
