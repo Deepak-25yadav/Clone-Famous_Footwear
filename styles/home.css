@@ -205,9 +205,19 @@ h1{
 }
 
 /* nike collection */
+
+.main{
+    width: 900%;
+    height: 100vh;
+    background-image: url(bg1.png);
+    background-size: cover;
+    background-position: center;
+}
+
 section .main{
     margin: auto;
     width:100%;
+    
 }
 section .main .main_content{
     display: flex;
@@ -356,7 +366,7 @@ h2{
 #category-section-1 > div >img{
     cursor: pointer;
     width:100%;
-    height: auto;
+    height: 50%;
 }
 #category-section-1 > div>h3{
     text-align: center;
@@ -505,7 +515,7 @@ h2{
 #category-section-2 > div >img{
     cursor: pointer;
     width:100%;
-    /* height: auto; */
+    /* height: 50%; */
 }
 #category-section-2 > div>h3{
     text-align: center;

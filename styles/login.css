@@ -1,0 +1,122 @@
+
+ #loginUpperContainer{
+    /* border: 2px solid green; */
+    width: 80%;
+    height:100vh;
+    display: flex;
+margin: auto;
+justify-content: center;
+background-image: url("https://wallpapercave.com/wp/wp2723829.jpg");
+font-size: 1.625rem;
+font-family: "Famous Footwear Sans",sans-serif;
+font-size: medium;
+}
+
+
+#loginContainer{
+    /* border: 2px solid red; */
+   width: 40%;
+  max-height: auto;
+display: flex;
+/* margin-right: 100px; */
+margin: auto;
+justify-content: center;
+background-color: white;
+height: 350px;
+box-shadow: 5px 10px rgb(135, 228, 235)
+}
+#loginContainer{
+    backface-visibility: visible;
+    border-radius: 5px;
+    width:40%;
+    text-align: left;
+    padding-left:10px;
+}
+input{
+border: 1px solid;
+   /* text-decoration: none; */
+    outline: none;
+    border-radius: 5px;
+    height: 20px;
+    width: 110%;
+    width:270px;
+    box-shadow: 2px 2px silver
+    
+}
+input:hover{
+background-color: rgb(220, 240, 239);
+}
+
+label{
+    display: block;
+    font-size: smaller;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.loginInput{
+    margin: 20px 0px 20px 0px;
+     
+} 
+#check{
+    position: relative;
+    right: 5px;
+    width: 15px;
+    margin-bottom: 20px;
+}
+#subm{
+   margin-bottom:  5000px;
+   height: 30px;
+   width: 110%;
+}
+#sub{
+    height: 25px;
+    background-color: skyblue;
+    width: auto;
+}
+span{
+ font-size: 1.625rem;
+font-family: "Famous Footwear Sans",sans-serif;
+font-size: smaller;
+position: relative;
+bottom: 6px;
+padding-right: 50px;
+}
+#fp{
+    position: relative;
+    left: 110px;
+    /* padding-top: 100px; */
+    top: 5px;
+    font-size: 1.625rem;
+font-family: "Famous Footwear Sans",sans-serif;
+font-size: smaller;
+}
+
+
+
+
+
+
+
+
+
+/* body {
+    background: #007bff;
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+  }
+  
+  .btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  .btn-google {
+    color: white !important;
+    background-color: #ea4335;
+  }
+  
+  .btn-facebook {
+    color: white !important;
+    background-color: #3b5998;
+  } */

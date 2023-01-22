@@ -68,7 +68,6 @@ function appendData(data) {
     data.forEach(function (el) {
         //data.innerHTML= null;
 
- 
         let div = document.createElement("div");
         div.className += "label_col2";
 
@@ -83,10 +82,10 @@ function appendData(data) {
         div_2.innerHTML = `${el.email}`;
 
         let div_3 = document.createElement("div");
-        div_3.innerHTML = `${el.name}`;
+        div_3.innerHTML = `${el.firstName}`;
 
         let div_4 = document.createElement("div");
-        div_4.innerHTML = `${el.phone}`;
+        div_4.innerHTML = `${el.mobile}`;
 
         let btn = document.createElement("button");
         btn.innerHTML = "Delete";
@@ -179,6 +178,6 @@ for(let tog_box of toggle_btn){
             toggle_checkbox(box_id, tog_status, "completed");
         }
         console.log(box_id,tog_status);
-    //toggle_checkbox(box_id, tog_status, "completed");
+        //toggle_checkbox(box_id, tog_status, "completed");
     })
 }

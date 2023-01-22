@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="styles/paymentpage.css">
 
-    <title>Women Shoe's</title>
-
-    <link rel="stylesheet" href="styles/women.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-                    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
-                    crossorigin="anonymous" 
-                    referrerpolicy="no-referrer" />
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+
 </head>
 <body>
+<section id="head">
+    <!-- search section -->
     <nav>
         <div id="nav-search">
             <a href="index.html"><img src="company_logo.png"> </a>
@@ -28,15 +31,15 @@
         </div>
         <div id="nav-links">
             <ul>
-                <li><a href="loginPage.html"><i class="fa fa-user"></i>Account</a></li>
+                <li><a href="register.html"><i class="fa fa-user"></i>Account</a></li>
                 <li><a href="favorite.html" ><i class="fa fa-heart"></i>Favorite</a></li>
                 <li><a href="cart.html" ><i class="fa fa-shopping-cart" ></i>Cart</a></li>
                 <li><a href="paymentpage.html"><i class="fa fa-credit-card" ></i>Checkout</a></li>
-                <li><a href="settings.html"><i class="fa fa-cog" ></i>Settings</a></li>
+                <li><a href="adminlogin.html"><i class="fa fa-user" ></i>Admin</a></li>
             </ul>
         </div>
     </nav>
-     <!-- category section -->
+    <!-- category section -->
     <nav>
         <div id="nav1-links">
             <ul>
@@ -397,136 +400,96 @@
             </ul>
         </div>
     </nav>
-
-    <div class="column">
-        <h1>Women's Shoes</h1>
-        <p>Shoes/Women</p>
-    </div>
+    <!-- payment  -->
     <div class="container">
-        <div class="row">
-            
-            <div class="total">
 
-            </div>
+        <form action="">
 
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/women.css">
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="column">
-                <h1>Women's Shoes</h1>
-                <p>Shoes/Women</p>
-            </div>
-        </div>
-        <div class="total">
+            <div class="row">
 
-        </div>
-        <div class="row">
+                <div class="col">
 
-            <h4>Sort By</h4>
-            <select id="price">
-                <option value="featured">Featured</option>
-                <option value="high">Price:High To Low</option>
-                <option value="low">Price:Low To High</option>
-                <option value="per">Percent Off</option>
-            </select>
-            <h4>Category</h4>
-            <div class="cat" id="cat">
-                <p id="opt1">Boots</p>
-                <p id="opt2">Clogs and Mules</p>
-                <p id="opt3">Heels</p>
-                <p id="opt4">Loafers and Oxford</p>
-                <p id="opt5">Sandals</p>
-                <p id="opt6">Slippers</p>
-                <p id="opt7">Sneaker and Athletic</p>
-                <p id="opt8">Work and Safety</p>
-            </div>
-            <h4>Brand</h4>
-                <select id="brand">
-                    <option value="base">Choose your brand</option>
-                    <option value="nike">Nike</option>
-                    <option value="timberland">Timberland</option>
-                    <option value="skecher">Skechers</option>
-                    <option value="vans">Vans</option>
-                </select>
-            <h4>Material</h4>
-            <select id="material">
-                <option value="base">Choose your material</option>
-                <option value="Canvas">Canvas</option>
-                <option value="EVA">EVA</option>
-                <option value="Fabric">Fabric</option>
-                <option value="Leather">Leather</option>
-            </select>
+                    <h3 class="title">billing address</h3>
 
-            <h4>Colour</h4>
-            <select id="colour">
-                <option value="base">Choose your colour</option>
-                <option style="background-color:black ;" value="black"></option>
-                <option style="background-color:white ;" value="white"></option>
-                <option style="background-color: palevioletred;" value="pink"></option>
-                <option style="background-color: grey;" value="grey"></option>
-                <option style="background-color: blue;" value="blue"></option>
-                <option style="background-color: red;" value="red"></option>
-                <option style="background-color: brown;" value="brown"></option>
-                <option style="background-color: orangered;" value="orange"></option>
-            </select>
+                    <div class="inputBox">
+                        <span>full name :</span>
+                        <input type="text" placeholder="Sakthivel Madhu">
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>address :</span>
+                        <input type="text" placeholder="room - street - locality">
+                    </div>
+                    <div class="inputBox">
+                        <span>city :</span>
+                        <input type="text" placeholder="bangalore">
+                    </div>
 
-        </div>
-        <div id="product">
-            
-        </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>state :</span>
+                            <input type="text" placeholder="india">
+                        </div>
+                        <div class="inputBox">
+                            <span>zip code :</span>
+                            <input type="text" placeholder="123 456">
+                        </div>
+                    </div>
 
-        
-    </div>
-    <div id="pagination_wrapper">
-
-    </div>
-    <!-- footer -->
-    <footer>
-        <div class="footer_main">
-            <div class="tag">
-                <h1>Contact</h1>
-                <a href="#"><i class="fa-solid fa-house"></i>123/Colombo/Sri Lanka</a>
-                <a href="#"><i class="fa-solid fa-phone"></i>+94 12 345 6789</a>
-                <a href="#"><i class="fa-solid fa-envelope"></i>contact@gmail.com</a>
-            </div>
-
-            <div class="tag">
-                <h1>Get Help</h1>
-                <a href="#" class="center">FAQ</a>
-                <a href="#" class="center">Shipping</a>
-                <a href="#" class="center">Returns</a>
-                <a href="#" class="center">Payment Options</a>
-            </div>
-
-            <div class="tag">
-                <h1>Our Stores</h1>
-                <a href="#" class="center">Sri Lanka</a>
-                <a href="#" class="center">USA</a>
-                <a href="#" class="center">India</a>
-                <a href="#" class="center">Japan</a>
-            </div>
-
-            <div class="tag">
-                <h1>Follw Us</h1>
-                <div class="social_link">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>                    
                 </div>
+
+                <div class="col">
+
+                    <h3 class="title">payment</h3>
+
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="images/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>name on card :</span>
+                        <input type="text" placeholder="Mr.sakthi">
+                    </div>
+                    <div class="inputBox">
+                        <span>credit card number :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                        <span>exp month :</span>
+                        <input type="text" placeholder="12/04">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>exp year :</span>
+                            <input type="number" placeholder="2023">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="123">
+                        </div>
+                    </div>
+
+                </div>
+        
             </div>
 
-        </div>
-    </footer>
+            <input type="submit" value="proceed to checkout" class="submit-btn">
 
-        <div id="pagination_wrapper">
+        </form>
 
-        </div>
-    </div>
-
+    </div>    
+</section> 
 </body>
-<script src="scripts/women.js"></script>
 </html>
+<script>
+    document.querySelector(".submit-btn").addEventListener("click",popup)
+    function popup(event){
+        event.preventDefault();
+        alert("Congraluations , Items will be deliverd into your address!!")
+        window.location.href = "index.html"
+    }
+</script>

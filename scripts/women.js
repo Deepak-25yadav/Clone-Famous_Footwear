@@ -43,7 +43,9 @@ work.addEventListener("click",()=>{
 // Sorting functionality
 sorting.addEventListener("change",()=>{
   if(sorting.value=="featured"){
+
     fetchRenderPro("?limit=12&page=1")
+
   }else if(sorting.value=="high"){
     product.sort((a,b)=>{
       return b.price-a.price;
@@ -62,6 +64,7 @@ sorting.addEventListener("change",()=>{
   }
   
 })
+
 // brand filter functionality
 brand.addEventListener("change",()=>{
   
@@ -111,6 +114,9 @@ colour.addEventListener("change",()=>{
     fetchRenderPro("?limit=12&page=1&colour=grey")
   }
 })
+// Utilites
+
+
 // Utilites
 
 function fetchRenderPro(query=null){
@@ -196,6 +202,9 @@ function renderPage(total){
         }
         
         return arr.join(' ');
+
+        return arr.join('');
+
       }
 
       pagination.innerHTML= `
