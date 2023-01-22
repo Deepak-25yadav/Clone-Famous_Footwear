@@ -219,6 +219,13 @@ document.querySelectorAll('.featured-image-1').forEach(image_1 =>{
 
 let show=document.querySelector(".show")
 // console.log(show)
+
+let favourite_data=JSON.parse(localStorage.getItem("favourite_data_list"))||[];
+
+let cart_data=JSON.parse(localStorage.getItem("cart_data_list"))||[];
+
+
+
 function showdata(data){
 
 
@@ -231,7 +238,9 @@ data.map(function(el,i){
     sym.id="favourite"
     sym.addEventListener("click",
     function favou(){
-     console.log(el)
+           favourite_data.push(el)
+      localStorage.setItem("favourite_data_list", JSON.stringify(favourite_data));
+     
    
     })
     let img=document.createElement("img");
@@ -251,6 +260,11 @@ data.map(function(el,i){
     let btn=document.createElement("button");
     btn.innerText="Add To Cart"
     btn.id="Add_To_Cart_button";
+    btn.addEventListener("click",()=>{
+
+      cart_data.push(el)
+      localStorage.setItem("cart_data_list", JSON.stringify(cart_data));
+    })
     div.append(sym,img,h2,p,price,rating,btn)
     show.append(div)
 })

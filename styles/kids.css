@@ -1,104 +1,105 @@
-:root{
-    --black:#2c2c54;
-    --orange:#ff9f1a;
-  }
-  
-  *{
-    font-family: 'Nunito', sans-serif;
-    margin: 0; padding:0;
-    box-sizing: border-box;
-    outline: none; border:none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: all .2s linear;
-  }
-  
-  html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top:6rem;
-    scroll-behavior: smooth;
-  }
-  
-  section{
-    padding:2rem 9%;
-  }
-  
-  .heading{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 4rem;
-    color:var(--black);
-    padding:1rem;
-  }
-  
-  .heading span{
-    text-transform: uppercase;
-    color:var(--orange);
-  }
-  
-  .btn{
-    display: inline-block;
-    margin-top: 1rem;
-    border-radius: .5rem;
-    border:.2rem solid var(--black);
-    font-weight: bolder;
-    font-size: 1.7rem;
-    color:var(--black);
-    cursor: pointer;
-    background:#fff;
-    padding:.8rem 3rem;
-  }
-  
-  .btn:hover{
-    background:var(--orange);
-    color:#fff;
-  }
-  
-  header{
-    position: fixed;
-    top:0; left:0; right:0;
-    z-index: 1000;
-    background:#fff;
-    padding:2rem 9%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-  }
-  
-  header .logo{
-    font-size: 2.5rem;
-    color:var(--black);
-    width:50%;
-  }
-  header .logo :hover{
-    color:var(--orange);
-  }
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
-  
+:root{
+  --black:#2c2c54;
+  --orange:#ff9f1a;
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin: 0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top:6rem;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+.heading{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color:var(--black);
+  padding:1rem;
+}
+
+.heading span{
+  text-transform: uppercase;
+  color:var(--orange);
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  border:.2rem solid var(--black);
+  font-weight: bolder;
+  font-size: 1.7rem;
+  color:var(--black);
+  cursor: pointer;
+  background:#fff;
+  padding:.8rem 3rem;
+}
+
+.btn:hover{
+  background:var(--orange);
+  color:#fff;
+}
+
+header{
+  position: fixed;
+  top:0; left:0; right:0;
+  z-index: 1000;
+  background:#fff;
+  padding:2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+  font-size: 2.5rem;
+  color:var(--black);
+  width:50%;
+}
+header .logo :hover{
+  color:var(--orange);
+}
+
 header .navbar a{
-    font-size: 1.7rem;
-    color:var(--black);
-    margin:0 1rem;
-    /* text-align: left;
-    justify-content: left; */
-  }
-  
-  header .navbar a:hover{
-    color:var(--orange);
-  }
-  
-  header .icons a{
-    font-size: 2.5rem;
-    color:var(--black);
-    margin-left:1.5rem;
-  }
-  
-  header .icons a:hover{
-    color:var(--orange);
-  }
-  
+  font-size: 1.7rem;
+  color:var(--black);
+  margin:0 1rem;
+  /* text-align: left;
+  justify-content: left; */
+}
+
+header .navbar a:hover{
+  color:var(--orange);
+}
+
+header .icons a{
+  font-size: 2.5rem;
+  color:var(--black);
+  margin-left:1.5rem;
+}
+
+header .icons a:hover{
+  color:var(--orange);
+}
+
 
   
 #menu-bar{
