@@ -9,34 +9,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
     <link rel="stylesheet" href="styles/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- <button id="loginButton">Click </button> -->
 
      
-    <div id="loginContainer">
+    <div id="loginUpperContainer">
+
+      <div id="loginContainer">
        
-      <form  id="loginForm">
-
-
-         <div class="loginInput">
-            <label for="">Gmail*</label>
-            <input type="email" name="" id="loginEmail">
-         </div>
-
-          <div class="loginInput">
-            <label for="">Password*</label>
-            <input type="password" name="" id="loginPassword">
-         </div> 
-
-         <!-- <button id="loginButton">Click </button>  -->
-
-         <div class="loginInput">
-            <input type="submit" value="Login" >  
-         </div> 
-
-      </form>
+         <form  id="loginForm">
+           <div>
+            <h4>LOGIN</h4>
+           </div>
+   
+            <div class="loginInput">
+               <label for="">Gmail*</label>
+               <input type="email" name="" id="loginEmail" placeholder="Username">
+            </div>
+   
+             <div class="loginInput">
+               <label for="">Password*</label>
+               <input type="password" name="" id="loginPassword" placeholder="Password">
+            </div> 
+   
+             <!-- <button id="loginButton">Click </button>   -->
+             <input type="checkbox" name="hii" id="check"> <span>Remember me ?</span>
+            <div  id="subm">
+               <input type="submit" value="Login" id="sub"> 
+               <span id="fp"><a href="otplogin.html">Forgot Password ?</a></span>
+               <h5>You don't have an account<br> Please <a href="register.html">Register</a> here!</h5>
+            </div> 
+            <!-- <p>Hii</p> -->
+          
+            <!-- <div >
+               <a href="#"><img src="image/google.png"></a>
+               <a href="#"><img src="image/facebook.png"></a>
+               <a href="#"><img src="image/twitter.png"></a>
+           </div> -->
+           <a href="#"><i class=""fa-brands fa-google></i></a>
+           <a href="#"><i class=""fa-brands fa-facebook></i></a>
+           <a href="#"><i class=""fa-brands fa-instagram></i></a>
+         </form>
+       </div>
     </div>
+           
 
 <script src="scripts/login.js"></script>
 </body>
