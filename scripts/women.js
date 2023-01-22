@@ -148,11 +148,7 @@ function renderCard(card){
     temp=card.map((item)=>{
       return getCard(item.imageurl,item.brand,item.name,item.price,item.id)
     })
-      // for(let i=0;i<card.length;i++){
-        
-      //   temp.push(getCard(card[i].imageurl,card[i].brand,card[i].name,card[i].price,card[i].id))
-      // }
-    //   console.log(temp)
+      
     mainHtml.innerHTML=temp
     let wish=document.querySelectorAll(".wishlist-button");
     for(let btn of wish){
@@ -173,7 +169,7 @@ function getCard(url,brand,name,rate,id){
     let card=`
     <div class="card" data-id=${id}>
     <div class="heart" data-id=${id}>
-    <button class="wishlist-button" data-id=${id} >${id}<i class="fa-regular fa-heart"></i></button>
+    <button class="wishlist-button" data-id=${id} >${id}</button>
     </div>    
     <div class="img">
                 <img src="${url}" alt="">
