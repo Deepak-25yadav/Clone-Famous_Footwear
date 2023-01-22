@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Card/Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/productdetail1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" 
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" 
+    crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" /> -->
+  </head>
+  <body>
+<section id="head">
+    <nav>
+        <div id="nav-search">
+            <a href="index.html"><img src="company_logo.png"> </a>
+            <h1><a href="index.html">Footwear<br> Globe</a></h1>
+            <input id="nav-input" type="text" placeholder="Search... everything you find ships free">               
+            <input id="nav-input-submit" type="submit">
+        </div>
+        <div id="nav-links">
+            <ul>
+                <li><a href="register.html"><i class="fa fa-user"></i>Account</a></li>
+                <li><a href="favorite.html" ><i class="fa fa-heart"></i>Favorite</a></li>
+                <li><a href="cart.html" ><i class="fa fa-shopping-cart" ></i>Cart</a></li>
+                <li><a href="paymentpage.html"><i class="fa fa-credit-card" ></i>Checkout</a></li>
+                <li><a href="adminlogin.html"><i class="fa fa-user" ></i>Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Products Details : </h1>
+    <!-- products  -->
+    <div class = "card-wrapper">
+      <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+          <div class = "img-display">
+            <div class = "img-showcase">
+              <img src = "images/product-2.png" alt = "shoe image">
+              <img src = "images/product-3.png" alt = "shoe image">
+              <img src = "images/product-4.png" alt = "shoe image">
+              <img src = "images/product-6.png" alt = "shoe image">
+            </div>
+          </div>
+          <div class = "img-select">
+            <div class = "img-item">
+              <a href = "#" data-id = "1">
+                <img src = "images/product-2.png" alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "2">
+                <img src = "images/product-3.png" alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "3">
+                <img src = "images/product-4.png" alt = "shoe image">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "4">
+                <img src = "images/product-6.png" alt = "shoe image">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+          <h2 class = "product-title">Adidas shoes</h2>
+          <a href = "#" class = "product-link">visit adidas store</a>
+          <div class = "product-rating">
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star-half-alt"></i>
+            <span>4.1(79)</span>
+          </div>
+
+          <div class = "product-price">
+            <p class = "last-price">Old Price: <span>$46.99</span></p>
+            <p class = "new-price">New Price: <span>$99.00 (27%)</span></p>
+          </div>
+
+          <div class = "product-detail">
+            <h2>about this item: </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+            <ul>
+              <li>Color: <span>White</span></li>
+              <li>Available: <span>in stock</span></li>
+              <li>Category: <span>Shoes</span></li>
+              <li>Shipping Area: <span>All over the India</span></li>
+              <li>Shipping Fee: <span>Free</span></li>
+            </ul>
+          </div>
+
+          <div class = "purchase-info">
+            <input type = "number" min = "0" value = "1">
+            <button type = "button" class = "btn">
+              Add to Cart <i class = "fas fa-shopping-cart"></i>
+            </button>
+            <button type = "button" class = "btn">Add to Favorite <i class="fa fa-heart"></i></button>
+          </div>
+
+          <div class = "social-links">
+            <p>Share At: </p>
+            <a href = "#">
+              <i class = "fab fa-facebook-f"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-twitter"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-instagram"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-whatsapp"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- footer  -->
+    <footer>
+        <div class="row">
+          <div class="col">
+            <img src="" class="logo">
+            <p>You can never take too much care over the choice 
+              of your shoes. Too many women think that they are 
+              unimportant, but the real proof of an elegant woman 
+              is what is on her feet.</p>
+          </div>
+          <div class="col">
+            <h3>Office <div class="underline"><span></span></div></h3>
+            <p>ITPL Road</p>
+            <p>Whitefield , Bangalore</p>
+            <p>Karnataka , 560066 , India</p>
+            <p class="email-id">demo@outlook.com</p>
+            <h4>+91 - 0123456789</h4>
+          </div>
+          <div class="col">
+            <h3>Links<div class="underline"><span></span></div></h3>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">About us</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Newsletter <div class="underline"><span></span></div></h3>
+            <form>
+              <i class="far fa-envelope"></i>
+              <input type="email" placeholder="Enter Your Mail" required>
+              <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <div class="social-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-whatsapp"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-pinterest"></i>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="copyrights"> Mr. Sakthivel Madhu - All Rights Reserved</p>
+      </footer>
+    <script src="scripts/productdetails.js"></script>
+  </body>
+</html>
