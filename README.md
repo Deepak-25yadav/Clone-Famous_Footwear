@@ -18,7 +18,7 @@ Contributors: <br>
 4.Bhakthula Ganapathy - https://github.com/Ganapathi525 <br>
 
 netlify link : <br>
-https://aesthetic-elf-5be095.netlify.app/   <br>
+https://helpful-clafoutis-49396d.netlify.app/   <br>
 
 github link: <br>
 https://github.com/Deepak-25yadav/wicked-edge-6587   <br>
