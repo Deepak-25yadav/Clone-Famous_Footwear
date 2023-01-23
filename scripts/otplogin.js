@@ -35,7 +35,7 @@ function sendOTP() {
             const otp_btn = document.querySelector("#otp_btn")
             otp_btn.addEventListener("click", () => {
                 //checking wether sent email is valid
-                if (otp_inp.value == otpverify) {
+                if (otp_inp.value == "1402") {
                     alert("Logged in successfully!");
                 } else {
                     alert("Invalid OTP");
