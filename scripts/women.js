@@ -1,6 +1,9 @@
 let product=[];
 
 let itemid=1;
+let checked=document.querySelector("#nav-search input");
+let searched=document.querySelector("#nav-input-submit")
+let serachBox=document.querySelector("#nav-input")
 let mainHtml=document.getElementById("product");
 let pagination=document.getElementById("pagination_wrapper");
 let sorting=document.getElementById("price");
@@ -118,7 +121,12 @@ colour.addEventListener("change",()=>{
 })
 // Utilites
 
-
+searched.addEventListener("click",(e)=>{
+  let data=serachBox.value;
+  e.preventDefault();
+  mainHtml.innerHTML=null
+   search(`?brand=${data}`)
+})
 // Utilites
 
 function fetchRenderPro(query=null){
@@ -130,7 +138,6 @@ function fetchRenderPro(query=null){
         return res.json()
     })
     .then((data)=>{
-      console.log(data);
         let proObj=data.map((item)=>({
             id:item.id,
             imageurl:item.image,
@@ -221,4 +228,27 @@ function renderPage(total){
 function getAsButton(pageNumber) {
     return `<button class="pagination-button" data-id=${pageNumber}>${pageNumber}</button>`
   }
-
+// 
+function search(query=null){
+  fetch(`https://63c7081e4ebaa80285528ba1.mockapi.io/user/product${query ? query : ""}`)
+  .then((res)=> {
+      let totalCount= 10;
+      let totalPage = Math.ceil(totalCount/12);
+      renderPage(totalPage)
+      return res.json()
+  })
+  .then((data)=>{
+    console.log(data);
+      let proObj=data.map((item)=>({
+          id:item.id,
+          imageurl:item.image,
+          brand:item.brand,
+          price:item.price,
+          name:item.name,
+          colour:item.colour,
+          percent:item.detail
+      }))
+      product=proObj;
+      renderCard(proObj);
+  })
+}
