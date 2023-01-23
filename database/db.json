@@ -170,6 +170,33 @@
       "date": "2023-01-12",
       "mobile": "8825747562",
       "id": 22
+    },
+    {
+      "firstName": "jack",
+      "lastName": "sparrow",
+      "email": "jack@gmail.com",
+      "password": "74120",
+      "date": "2023-01-11",
+      "mobile": "123456789",
+      "id": 23
+    },
+    {
+      "firstName": "batman",
+      "lastName": "gatham",
+      "email": "batman@gmail.com",
+      "password": "12345",
+      "date": "2023-01-03",
+      "mobile": "1234567890",
+      "id": 24
+    },
+    {
+      "firstName": "sakthivel",
+      "lastName": "MAdhu",
+      "email": "sakthi130597@gmail.com",
+      "password": "8520",
+      "date": "2023-01-20",
+      "mobile": "741852963",
+      "id": 25
     }
   ],
   "products": [
@@ -340,6 +367,30 @@
       "material": "rubber",
       "offer": "30-50",
       "id": "Nj3iXwd"
+    },
+    {
+      "image": "https://aesthetic-elf-5be095.netlify.app/company_logo.png",
+      "name": "shoe",
+      "brand": "adidas",
+      "colour": "blue",
+      "price": "885",
+      "gender": "women",
+      "size": "",
+      "material": "lether",
+      "offer": "below30",
+      "id": "UoJi9FL"
+    },
+    {
+      "image": "https://www.famousfootwear.com/blob/product-images/20000/74/20/1/74201_pair_medium.jpg",
+      "name": "sandal",
+      "brand": "adidas",
+      "colour": "red",
+      "price": "78",
+      "gender": "kids",
+      "size": "",
+      "material": "fibric",
+      "offer": "below30",
+      "id": "e8mN_rn"
     }
   ]
 }
