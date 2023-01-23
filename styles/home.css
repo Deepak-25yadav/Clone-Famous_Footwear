@@ -828,3 +828,27 @@ footer {
         left: 100%;
     }
   }
+
+  
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+    
+   
+}
+   
+   
+   
+   
+   @media all and (min-width: 320px) and (max-width: 767px) {
+   
+   
+    #offer-section , #category-section , #category-section-1 ,
+    #style ,#head32 , #head33 , #style1-1 , #head34 ,
+    #category-section-2 , #category-section-3 {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
+    
+   
+   }
