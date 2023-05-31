@@ -1,6 +1,6 @@
-# wicked-edge-6587
+# Clone of Famous Footwear 
 
-Famous Footwear is a retail store that specializes in footwear for men, women, and children. <br>
+Famous Footwear is a retail store that specializes that specializes in footwear for men, women and children. This is an online footwear shop. You get to order the pair of shoes that you love and sign up with us for constant updates on new stock.<br>
 
 use this http for backend datas <br>
 http://localhost:5555/users => storing user data <br>
