@@ -6,7 +6,7 @@ Deployed Netlify link: https://magnificent-bonbon-8ffb8d.netlify.app/   <br>
 
 Github link: https://github.com/Deepak-25yadav/wicked-edge-6587   <br><br>
 
-Contributors: <br>
+## Team Contributors: <br>
 1. Sakthivel Madhu - https://github.com/SakthivelMadhu <br>
 2. Subir adhikari - https://github.com/subir701 <br>
 3. Deepak Yadav - https://github.com/Deepak-25yadav <br>
