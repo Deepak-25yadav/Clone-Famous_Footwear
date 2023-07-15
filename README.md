@@ -27,7 +27,7 @@ Installing npm:<br>
 
 
 
-## Features Used: <br>
+## Tech-Stack Used: <br>
 1.HTML ,CSS and JavaSricpts <br>
 2. slider function <br>
 3. CRUD and DOM operations <br>
