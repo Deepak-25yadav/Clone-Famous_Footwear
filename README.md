@@ -24,19 +24,29 @@ Installing npm:<br>
 4.npm json-server --watch ./database/db.json --port=5555 -> it will create whatever your given(5555) localhost
 
 
+## Tech-Stack Used
+
+- HTML, CSS, and JavaScript 
+- slider function 
+- CRUD and DOM operations 
+- created API <br>
+- SMTP js credentials 
+- created backend server 
+- Admin able to block/unblock user 
+- Admin able to create and add a product to the user side of website  
 
 
+## Features
 
-## Tech-Stack Used: <br>
-1.HTML ,CSS and JavaSricpts <br>
-2. slider function <br>
-3. CRUD and DOM operations <br>
-4. created API <br>
-5. SMTP js credentials <br>
-6. created backend server <br>
-7. Admin able to block/unblock user  <br>
-8. Admin able to create and add a product to the user side of website <br> 
+- Sign-up || Login
+- Searching || Sorting || Filter
+- Pagination
+- Responsive web-design
+- Single Product Page
+- Payment Page || Cart Page
+- Admin Page ( with CRUD operations)
 
+  <br><br>
 
 
 ### User Index Page(Home Page) Nav bar: <br>
