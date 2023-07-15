@@ -15,7 +15,7 @@ Contributors: <br>
 
 Use this HTTP for backend data <br>
 http://localhost:5555/users => storing user data <br>
-http://localhost:5555products => creating/adding a new product to user from admin <br>
+http://localhost:5555/products => creating/adding a new product to user from admin <br>
 
 Installing npm:<br>
 1.npm init -y -> it will create package.json <br>
