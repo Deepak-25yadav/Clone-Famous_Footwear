@@ -2,7 +2,7 @@
 
 Famous Footwear is a retail store that specializes in footwear for men, women, and children. This is an online footwear shop. You get to order the pair of shoes that you love and sign up with us for constant updates on new stock.<br>
 
-Deployed Netlify link: https://magnificent-bonbon-8ffb8d.netlify.app/   <br>
+Deployed Netlify link: https://enchanting-cupcake-7ed0a8.netlify.app/   <br>
 
 Github link: https://github.com/Deepak-25yadav/wicked-edge-6587   <br><br>
 
